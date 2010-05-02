@@ -1,0 +1,25 @@
+[INF][2488] POSIX signal control disabled.
+[INF][2488] Running in production mode on 127.0.0.1:9999
+[INF][2584] POSIX signal control disabled.
+[INF][2584] Running in production mode on 127.0.0.1:9999
+[INF][3480] POSIX signal control disabled.
+[INF][3480] Running in production mode on 127.0.0.1:9999
+[ERR][3480] Malformed request, does not end with ','
+[ERR][3480] Malformed request, does not end with ','
+[INF][4452] POSIX signal control disabled.
+[INF][4452] Running in production mode on 127.0.0.1:9999
+[ERR][4452] Malformed request, does not end with ','
+[ERR][4452] Malformed request, does not end with ','
+[ERR][4452] Malformed request, does not end with ','
+[ERR][4452] Malformed request, does not end with ','
+[ERR][4452] Malformed request, does not end with ','
+[ERR][4452] Malformed request, does not end with ','
+[INF][5276] POSIX signal control disabled.
+[INF][5276] Running in production mode on 127.0.0.1:9999
+[ERR][5276] Malformed request, does not end with ','
+[INF][4432] POSIX signal control disabled.
+[INF][4432] Running in production mode on 127.0.0.1:9999
+[INF][2824] POSIX signal control disabled.
+[INF][2824] Running in production mode on 127.0.0.1:9999
+[INF][5432] POSIX signal control disabled.
+[INF][5432] Running in production mode on 127.0.0.1:9999

@@ -1,0 +1,32 @@
+xml.chart do
+  xml.chart_type("column") 
+  xml.legend_label("","layout"=>"vertical","size"=>12) 
+  xml.legend_rect("","x"=>12,"width"=>500) 
+  xml.chart_value("color" =>"ffffff", "alpha" => "85", "font" => "arial",  "bold"=> "true",  "size"=>"10",  "position"=>"middle", "prefix" =>"",  "suffix"=>"", "decimals"=>"0", "separator"=>"", "as_percentage"=>"false" )
+  xml.axis_category("font" =>'Arial',"bold"=>true,"size"=>14)
+  xml.axis_value("font" =>'Arial',"bold"=>true,"size"=>14)
+
+
+  xml.chart_rect("","x"=>90,"y"=>100,"height"=>200,"width"=>650)
+  
+  xml.chart_data do
+    xml.row do    
+      xml.null()      
+      for @mes in Salary::MONTHS_FOR_HUMANS
+        xml.string(@mes)
+      end
+    end
+    xml.row do
+     xml.string("Salario de Bolsillo")
+     for @mes in Salary::MONTHS
+        xml.number(@sueldo_bolsillo[@mes])
+      end
+    end
+    xml.row do
+     xml.string("Ganancia Mensual")
+     for @mes in Salary::MONTHS
+        xml.number(@ganancia_retenida[@mes])
+      end
+    end
+  end
+end   

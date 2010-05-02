@@ -1,0 +1,71 @@
+<div class="titulo_tabla"> 
+<h1>Diferencia con la aplicacion de deducciones especiales</h1>
+<%= link_to(image_tag("stat.png" , :size => "40x30", :alt => "Grafico salario anual", :border =>"0" ),
+{ :controller => "reports" ,
+:action => "index" },
+{ })
+%>
+<%= link_to(image_tag("aplicar deducciones especiales.png" , :size => "40x30", :alt => "Aplicar deducciones especiales", :border =>"0"  ),
+{ :controller => "salary" ,
+:action => "cargar_deducciones_especiales", :id => @salary.id },
+{ })
+%>
+</div>
+  <div class="entry" >
+  <table >
+    <tr class="<%= cycle('fila_p', 'fila_i') %>">
+     <TD></TD>
+     <% for mes in Salary::MONTHS_FOR_HUMANS-%>
+     <td >
+         <H3 ALIGN="CENTER"><%=mes %></h3>   
+     </td> 
+    <% end %>
+    </tr>
+
+     <tr class="<%= cycle('fila_p', 'fila_i') %>"> 
+     <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @retained_tax , 
+                :titulo_fila=> "Impuesto retenido",
+                 :ayuda_titulo => "El total del impuesto efectivamente retenido en el mes en cuestion, para llegar al acumulado que esta calculado en la fila anterior. El sistema lo calcula exactamente tomando en cuenta el total a retener y ajustando mes a mes. Las empresas en general muchas veces ajustan el total a retener recien en Diciembre, por eso muchas veces surgen diferencias a cobrar o pagar a favor o en contra del empleado."}%>    
+     </tr>          
+
+     <tr class="<%= cycle('fila_p', 'fila_i') %>"> 
+     <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @salario_de_bolsillo , 
+                :titulo_fila=> "Salario Neto de Bolsillo",
+                :ayuda_titulo => "ESTE ES EL SALARIO NETO!! LO QUE EFECTIVAMENTE COBRA EL EMPLEADO (generalmente por deposito en cuenta sueldo)."}%>    
+     </tr>          
+
+     <tr class="<%= cycle('fila_p', 'fila_i') %>"> 
+     <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @retained_tax_with_especial_discounts , 
+                :titulo_fila=> "Imp.Ret. aplicando descuentos",
+                :ayuda_titulo => "El total del impuesto efectivamente retenido APLICANDO LOS DESCUENTOS ESPECIALES"}%>    
+     </tr>          
+
+     <tr class="<%= cycle('fila_p', 'fila_i') %>"> 
+     <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @salario_de_bolsillo_with_especial_discounts , 
+                :titulo_fila=> "Salario Neto aplicando descuentos",
+                :ayuda_titulo => "ESTE ES EL SALARIO NETO!! LO QUE EFECTIVAMENTE COBRA Tomando en cuenta ahora los descuentos especiales"}%>    
+     </tr>          
+     </table> 
+   </div>    
+<div class="entry" >
+<table >
+     <tr class="<%= cycle('fila_p', 'fila_i') %>"> 
+     <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @diferencia_ganancia_a_retener , 
+                :titulo_fila=> "Dif. Ganancia a retener",
+                :ayuda_titulo => "Cuanto menos se retiene por ganancias al aplicar los descuentos ingresados."}%>    
+     </tr>          
+
+     <tr class="<%= cycle('fila_p', 'fila_i') %>"> 
+     <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @diferencia_sueldo_de_bolsillo , 
+                :titulo_fila=> "Dif. Salario Neto",
+                :ayuda_titulo => "Cuanto MAS se obtiene de Salario Neto al aplicar los descuentos ingresados."}%>    
+              
+     </tr>          
+</table> 
+ </div>    

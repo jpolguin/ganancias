@@ -1,0 +1,68 @@
+--- 
+revenue_parameters_000001: 
+  has_detail: "0"
+  name: MINIMO_NO_IMPONIBLE
+  id: "1"
+  value: "7500.00"
+  year: "2007"
+revenue_parameters_000002: 
+  has_detail: "0"
+  name: DEDUCCION_ESPECIAL
+  id: "2"
+  value: "36000.00"
+  year: "2007"
+revenue_parameters_000003: 
+  has_detail: "0"
+  name: CONYUGE
+  id: "3"
+  value: "8000.00"
+  year: "2007"
+revenue_parameters_000004: 
+  has_detail: "0"
+  name: HIJO
+  id: "4"
+  value: "4000.00"
+  year: "2007"
+revenue_parameters_000005: 
+  has_detail: "0"
+  name: OTRAS_CARGAS
+  id: "5"
+  value: "3000.00"
+  year: "2007"
+revenue_parameters_000006: 
+  has_detail: "1"
+  name: PORCENTAJE_DESCUENTO_OBRA_SOCIAL_Y_LEY
+  id: "6"
+  value: "0.00"
+  year: "2007"
+revenue_parameters_000007: 
+  has_detail: "1"
+  name: SUELDO_TOPE_PARA_OBRA_SOCIAL
+  id: "7"
+  value: "0.00"
+  year: "2007"
+revenue_parameters_000008: 
+  has_detail: "1"
+  name: SUELDO_TOPE_PARA_JUBILACION
+  id: "8"
+  value: "0.00"
+  year: "2007"
+revenue_parameters_000009: 
+  has_detail: "1"
+  name: PORCENTAJE_DESCUENTO_JUBILACION
+  id: "9"
+  value: "0.00"
+  year: "2007"
+revenue_parameters_000010: 
+  has_detail: "0"
+  name: MINIMO_NO_IMPONIBLE
+  id: "10"
+  value: "5000.00"
+  year: "2005"
+revenue_parameters_000011: 
+  has_detail: "0"
+  name: OTRAS_CARGAS
+  id: "11"
+  value: "2500.00"
+  year: "2005"
+

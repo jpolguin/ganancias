@@ -1,0 +1,149 @@
+<div class="salary-form" >
+<%= error_messages_for 'salary' %>
+<fieldset>
+<legend>Ingrese las deducciones especiales: seguros, donaciones, intereses, etc.</legend>
+<% form_for :salary, :url => { :action => :aplicar_deducciones_especiales , :id =>@salary} do |form| %>
+
+<table>
+  <tr><td>
+  <label>Copiar a Derecha?</label>
+  </td>
+  <td>
+   <%= check_box_tag  :copiar_a_derecha, @copiar_a_derecha, @copiar_a_derecha %>  
+  </td></tr>   
+</table>
+<div class="entry" >
+<table>
+  <tr class="fila_p" > 
+    <td></td>
+     <% for mes in Salary::MONTHS_FOR_HUMANS -%>
+       <td class="columna_numero_chico" align="center">
+         <H3 ALIGN="CENTER"><%= mes %></h3>   
+     </td>
+        <% end %>
+   </tr>
+   
+   <tr class="fila_p">
+      <td >
+       <span class="titulo_fila">Personal domestico</span>
+      </td> 
+     <% @salary.special_discounts.each_with_index do |salario_mes, index|   %>
+       <% fields_for "deduccion_mes[#{index}]", salario_mes do |f| %>
+      <td class="columna_numero_chico">
+         <%= f.text_field :personal_domestico, :id =>"deduccion_mes[#{index}]_personal_domestico" ,  :size => 5  %>
+         <%= observe_field("deduccion_mes[#{index}]_personal_domestico",:frequency => 1,  :function => "copiar_a_derecha(element, value)") %>
+      </td>
+      
+       <% end %>  
+     <% end %>
+   </tr> 
+   
+   <tr class="fila_p">
+      <td >
+       <span class="titulo_fila">Intereses Hipot.</span>
+      </td> 
+     <% @salary.special_discounts.each_with_index do |salario_mes, index|   %>
+       <% fields_for "deduccion_mes[#{index}]", salario_mes do |f| %>
+       <td class="columna_numero_chico">
+         <%= f.text_field :intereses_hipotecarios, :id =>"deduccion_mes[#{index}]_intereses_hipotecarios" ,:size => 5 %>
+         <%= observe_field("deduccion_mes[#{index}]_intereses_hipotecarios",:frequency => 1, :function => "copiar_a_derecha(element, value)") %>
+     </td>
+      <% end %>  
+     <% end %>
+   </tr> 
+
+   <tr class="fila_p">
+      <td >
+       <span class="titulo_fila">Aport. V. AFJP</span>
+      </td> 
+     <% @salary.special_discounts.each_with_index do |salario_mes, index|  %>
+       <% fields_for "deduccion_mes[#{index}]", salario_mes do |f| %>
+       <td class="columna_numero_chico">
+         <%= f.text_field :aportes_voluntarios_afjp, :id =>"deduccion_mes[#{index}]_aportes_voluntarios_afjp" ,:size => 5 %>
+         <%= observe_field("deduccion_mes[#{index}]_aportes_voluntarios_afjp",:frequency => 1, :function => "copiar_a_derecha(element, value)") %>
+     </td>
+      <% end %>  
+     <% end %>
+   </tr>  
+
+   <tr class="fila_p">
+      <td >
+       <span class="titulo_fila">Seg. retiro</span>
+      </td> 
+     <% @salary.special_discounts.each_with_index do |salario_mes, index|  %>
+       <% fields_for "deduccion_mes[#{index}]", salario_mes do |f| %>
+       <td class="columna_numero_chico">
+         <%= f.text_field :seguro_retiro, :id =>"deduccion_mes[#{index}]_seguro_retiro" , :size => 5 %>
+         <%= observe_field("deduccion_mes[#{index}]_seguro_retiro",:frequency => 1, :function => "copiar_a_derecha(element, value)") %>
+     </td>
+      <% end %>  
+     <% end %>
+   </tr>  
+
+   <tr class="fila_p">
+      <td >
+       <span class="titulo_fila">Seg. Vida</span>
+      </td> 
+     <% @salary.special_discounts.each_with_index do |salario_mes, index|  %>
+       <% fields_for "deduccion_mes[#{index}]", salario_mes do |f| %>
+       <td class="columna_numero_chico">
+         <%= f.text_field :seguro_vida, :id =>"deduccion_mes[#{index}]_seguro_vida" , :size => 5 %>
+         <%= observe_field("deduccion_mes[#{index}]_seguro_vida",:frequency => 1, :function => "copiar_a_derecha(element, value)") %>
+     </td>
+      <% end %>  
+     <% end %>
+   </tr>  
+  
+   <tr class="fila_p">
+      <td >
+       <span class="titulo_fila">Cuota medica</span>
+      </td> 
+     <% @salary.special_discounts.each_with_index do |salario_mes, index|  %>
+       <% fields_for "deduccion_mes[#{index}]", salario_mes do |f| %>
+       <td class="columna_numero_chico">
+         <%= f.text_field :cuota_medica, :id =>"deduccion_mes[#{index}]_cuota_medica" , :size => 5 %>
+         <%= observe_field("deduccion_mes[#{index}]_cuota_medica",:frequency => 1, :function => "copiar_a_derecha(element, value)") %>
+     </td>
+      <% end %>  
+     <% end %>
+   </tr>  
+
+   <tr class="fila_p">
+      <td >
+       <span class="titulo_fila">Donacion</span>
+      </td> 
+     <% @salary.special_discounts.each_with_index do |salario_mes, index|  %>
+       <% fields_for "deduccion_mes[#{index}]", salario_mes do |f| %>
+       <td class="columna_numero_chico">
+         <%= f.text_field :donacion, :id =>"deduccion_mes[#{index}]_donacion" , :size => 5 %>
+         <%= observe_field("deduccion_mes[#{index}]_donacion",:frequency => 1, :function => "copiar_a_derecha(element, value)") %>
+     </td>
+      <% end %>  
+     <% end %>
+   </tr>  
+
+   <tr class="fila_p">
+      <td >
+       <span class="titulo_fila">Honorario medicos</span>
+      </td> 
+     <% @salary.special_discounts.each_with_index do |salario_mes, index|  %>
+       <% fields_for "deduccion_mes[#{index}]", salario_mes do |f| %>
+       <td class="columna_numero_chico">
+         <%= f.text_field :honorario_medico , :id =>"deduccion_mes[#{index}]_honorario_medico" , :size => 5 %>
+         <%= observe_field("deduccion_mes[#{index}]_honorario_medico",:frequency => 1, :function => "copiar_a_derecha(element, value)") %>
+     </td>
+      <% end %>  
+     <% end %>
+   </tr>  
+  
+
+</table>  
+</div>
+<table>
+  <tr> <td align="center" >
+    <%= submit_tag "Aplicar descuentos >>" , :class => "submit" %>
+  </td></tr>   
+</table>
+  <% end %>
+</fieldset>
+</div>

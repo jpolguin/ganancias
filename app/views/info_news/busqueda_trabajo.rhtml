@@ -1,0 +1,25 @@
+<div> 
+  <p>
+  <Label class="text4">Información y Sitios sobre y para Busqueda de Trabajo  </Label> 
+  </p>
+  <div id="pieads">
+  <script type="text/javascript"><!--
+  google_ad_client = "pub-9491596643460689";
+  /* Horizontal728x90, para pie, creado 21/07/08 */
+  google_ad_slot = "2815140491";
+  google_ad_width = 728;
+  google_ad_height = 90;
+  //-->
+  </script>
+  <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+   <%@noticias.each do |noticia|  -%>     
+   <div>
+    <%= render :partial => "mostrar_noticia",
+                :locals => {:titulo_noticia=> noticia[:titulo], :descripcion => noticia[:descripcion],
+                :url_noticia => noticia[:url_noticia],:fecha=> noticia[:fecha]}%>    
+   </div>         
+   <% end %>
+</div>
+

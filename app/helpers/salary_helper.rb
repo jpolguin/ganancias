@@ -1,0 +1,3 @@
+module SalaryHelper
+  
+end

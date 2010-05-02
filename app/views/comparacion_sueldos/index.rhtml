@@ -1,0 +1,81 @@
+<div class="salary-form" >
+<%= error_messages_for 'salary' %>
+<fieldset>
+<legend>Ingrese su sueldo actual y futuro para comparar</legend>
+<% form_for :comparacion_sueldo, :url => { :action => :comparar_sueldos } do |form| %>
+ <div>
+<div class="entry" >
+<table>
+  <tr class="fila_p" > 
+    <td>
+       <H3 ALIGN="CENTER">Composicion sueldo</h3>   
+    </td>
+    <td class="columna_numero" align="center">
+       <H3 ALIGN="CENTER">Sueldo Actual</h3>   
+     </td>
+    <td class="columna_numero" align="center">
+       <H3 ALIGN="CENTER">Sueldo Futuro</h3>   
+     </td>
+
+   </tr>
+   
+   <tr class="fila_i">
+      <td >
+       <span class="titulo_fila">Salario Bruto (mensual)</span>
+      </td> 
+       <td class="columna_numero">
+         <%= form.text_field :salario_bruto_actual, :id=> "salario_bruto_actual", :size => 7  %>
+       </td>
+       <td class="columna_numero">
+         <%= form.text_field :salario_bruto_futuro, :id=> "salario_bruto_futuro", :size => 7  %>
+       </td>
+  </tr> 
+   
+   <tr class="fila_i">
+      <td >
+       <span class="titulo_fila">Tickets y Viaticos (mensual)</span>
+      </td> 
+      <td class="columna_numero">
+         <%= form.text_field :ticket_actual, :id=> "ticket_actual",:size => 7 %>
+     </td>
+      <td class="columna_numero">
+         <%= form.text_field :ticket_futuro, :id=> "ticket_futuro",:size => 7 %>
+     </td>
+   </tr> 
+
+   <tr class="fila_i">
+      <td >
+       <span class="titulo_fila">Bonos/premios(total anual)</span>
+      </td> 
+       <td class="columna_numero">
+         <%= form.text_field :bonus_actual , :size => 7 %>
+     </td>
+       <td class="columna_numero">
+         <%= form.text_field :bonus_futuro , :size => 7 %>
+     </td>
+   </tr>     
+</table>  
+</div>
+<br>
+<div>
+<legend>Ingrese Deducciones Directas: Esposa, hijos y otras cargas (Padres, abuelos, etc.)</legend>
+<table>
+  <tr>
+   <td><label for="deduce_conyuge" >Deduce a su conyuge?</label></td>
+   <td><%= form.check_box :deduce_conyuge%></td>
+  </tr>   
+  <tr>
+    <td><label for="cantidad_hijos" >Cantidad de hijos:</label></td>
+    <td><%= form.text_field :cantidad_hijos, :size => 2 %></td>
+  </tr>
+  <tr>
+    <td><label for="otras_cargas" >Otras personas a cargo:</label></td>
+    <td><%= form.text_field :otras_cargas, :size => 2 %></td>
+  </tr>   
+</table>
+  <%= submit_tag "Comparar Sueldos>>" , :class => "submit"%>
+  </div>
+</div>
+  <% end %>
+</fieldset>
+</div>

@@ -1,0 +1,101 @@
+<div class="titulo_tabla"> 
+<h1>Calculos anuales</h1>
+<%= link_to(image_tag("stat.png" , :size => "40x30", :alt => "Grafico salario anual", :border =>"0" )  ,
+{ :controller => "reports" ,
+:action => "index" },
+{ })
+%>
+<%= link_to(image_tag("aplicar deducciones especiales.png" , :size => "40x30", :alt => "Aplicar deducciones especiales", :border =>"0" ),
+{ :controller => "salary" ,
+:action => "cargar_deducciones_especiales", :id => @salary.id },
+{ })
+%>
+</div>
+<div class="entry" >
+  <table >
+    <tr class="<%= cycle('fila_p', 'fila_i') %>">
+     <TD></TD>
+     <% for mes in Salary::MONTHS_FOR_HUMANS-%>
+     <td >
+         <H3 ALIGN="CENTER"><%=mes %></h3>   
+     </td> 
+    <% end %>
+    </tr>
+    <tr class="<%= cycle('fila_p', 'fila_i') %>">
+     <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @anual_salary, 
+                :titulo_fila=> "Sueldo Bruto",
+                :ayuda_titulo =>"Sueldo bruto del mes antes de los descuentos, sin sumar tickets ni bonos. En los meses con aguinaldo  se muestra con aguinaldo sumado." }%>    
+     </tr>
+    
+    <tr class="<%= cycle('fila_p', 'fila_i') %>">
+    <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @anual_social_discount,
+                :titulo_fila => "Obra Social",
+                :ayuda_titulo => "Descuento de ley de obra social (3% del sueldo bruto) y la ley de solidaridad previsional (3% del bruto al INSSJP conocido como PAMI). No se aplica sobre tickets y viaticos si sobre el resto de los conceptos, incluyendo aguinaldo, premios, etc. Tiene tope 4800."}%>
+    </tr>
+    
+    <tr class="<%= cycle('fila_p', 'fila_i') %>">
+    <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @anual_retirement_discount,
+                :titulo_fila=> "Jubilacion", 
+                :ayuda_titulo => "Descuento de ley de Jubilación, 11% sobre el sueldo bruto, sea para AFJP (regimen capitalizacion) o para el estado. Tiene tope de aplicacion de 7800."}%>
+    </tr>
+    <tr class="<%= cycle('fila_p', 'fila_i') %>">
+    <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @anual_subtotal_salary_acum,
+                :titulo_fila=> "Subtotal Ingresos Acum",
+                :ayuda_titulo => "Es la suma acumulada mes a mes del bruto + tickets+ aguinaldo + premio o bonos de los meses anteriores hasta el actual (incluido). Sirve para el calculo de la retencion del impuesto a las ganancias."}%>
+    </tr>
+    <tr class="<%= cycle('fila_p', 'fila_i') %>">
+    <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @anual_previsional_discount_acum,
+                :titulo_fila=> "Descuentos previsionales Acum",
+                :ayuda_titulo => "Es la suma acumulada de los descuentos tantos de obra social como de jubilación, de todos los meses anteriores hasta el mes que se esta mirando (incluido)." }%>
+     </tr>
+     <hr>
+     <tr class="<%= cycle('fila_p', 'fila_i') %>"> 
+     <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @anual_salary_menos_desc_previsional, 
+                :titulo_fila=> "Sueldo Subt",
+                :ayuda_titulo => "Es la resta acumulada de las dos filas anteriores. Subtotal Ingresos Acum - Descuentos previsionales Acum. En cada mes representa lo que un empleado hubiera cobrado desde el principio del año hasta ese mes (ya que es acumulado) si no hubiera impuesto a las ganancias. Si se pasa de 91000 en Diciembre se aplica la tabla de machinea reduciendo drasticamente las deducciones permitidas."}%>    
+     </tr>          
+
+     <tr class="<%= cycle('fila_p', 'fila_i') %>"> 
+     <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @anual_deduction_amount_acum, 
+                :titulo_fila=> "Deducc. mensuales acum. ",
+                :ayuda_titulo => " Es la suma acumulada mes a mes de las deducciones directas permitidas para el calculo del impuesto a las ganancias. Es decir la suma del minimo no imponible (7500 anual) + deduccion especial (36000 anual) + deducc por conyuge hijos y otras cargas si las hubiera pero prorrateados a un mes, (por ejemplo 7500/12 para minimo no imponible) y acumulado desde el principio hasta el mes que se esta mirando. Estas deducciones son las que se ven afectadas por la tabla de machinea."}%>    
+     </tr>          
+
+     <tr class="<%= cycle('fila_p', 'fila_i') %>"> 
+     <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @anual_net_revenue, 
+                :titulo_fila=> "Ganancia Neta Sujeta a Imp.", 
+                :ayuda_titulo => "Este es el monto sobre el cual se va a aplicar la alicuota de ganancias, despues de al bruto + tickets + premios y aguinaldos descontarle los descuentos previsionales y restarle las deducciones directas permitidas (fila anterior)." }%>    
+     </tr>          
+
+     <tr class="<%= cycle('fila_p', 'fila_i') %>"> 
+     <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @anual_revenue_tax , 
+                :titulo_fila=> "Impuesto Acumulado", 
+                :ayuda_titulo => "Total del impuesto que deberia haber retenido desde el principio del año hasta el mes en cuestion, en Diciembre representa el total del impuesto a las ganancias anual que al empleado le deben retener (es decir, que debe pagar)."}%>    
+     </tr>          
+     <tr class="<%= cycle('fila_p', 'fila_i') %>"> 
+     <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @retained_tax , 
+                :titulo_fila=> "Impuesto retenido",
+                :ayuda_titulo => "El total del impuesto efectivamente retenido en el mes en cuestion, para llegar al acumulado que esta calculado en la fila anterior. El sistema lo calcula exactamente tomando en cuenta el total a retener y ajustando mes a mes. Las empresas en general muchas veces ajustan el total a retener recien en Diciembre, por eso muchas veces surgen diferencias a cobrar o pagar a favor o en contra del empleado."}%>    
+     </tr>          
+
+     <tr class="<%= cycle('fila_p', 'fila_i') %>"> 
+     <%= render :partial => "anual_amount",
+                :locals => { :hash_datos_anual => @salario_de_bolsillo , 
+                :titulo_fila=> "Salario Neto de Bolsillo", 
+                :ayuda_titulo => "ESTE ES EL SALARIO NETO!! LO QUE EFECTIVAMENTE COBRA EL EMPLEADO (generalmente por deposito en cuenta sueldo)."}%>    
+     </tr>          
+
+
+     </table> 
+   </div>
+    <%#= button_to "Mostrar grafico" , :controller => :reports%>

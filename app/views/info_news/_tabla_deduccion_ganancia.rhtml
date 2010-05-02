@@ -1,0 +1,8 @@
+    <table border=2 width="100%">
+      <caption class="titulo1"><%= titulo_tabla%> </caption>
+      <tr><TH>Concepto</TH>	<TH>Referencia normativa</TH>	<TH>Imp.anual</TH> <TH>Aclaracion adicional</TH>  </tr>
+      <% hash_datos_tabla.each do |fila_tabla|  -%>
+      <tr><TD><%=fila_tabla[:concepto]%> </TD>	<TD><%=fila_tabla[:norma]%></TD> <TD><%=fila_tabla[:valor]%></TD> <TD><%=fila_tabla[:aclaracion]%></TD></tr>
+      <% end %>
+
+    </table>

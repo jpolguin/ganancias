@@ -1,0 +1,13 @@
+<div> 
+  <p>
+  <Label class="text4">Información y  noticias sobre el Impuesto a las  Ganancias (4ta Categoria)</Label> 
+  </p>
+   <%@noticias.each do |noticia|  -%>
+   <div>
+    <%= render :partial => "mostrar_noticia",
+                :locals => {:titulo_noticia=> noticia[:titulo], :descripcion => noticia[:descripcion],
+                :url_noticia => noticia[:url_noticia],:fecha=> noticia[:fecha]}%>    
+   </div>         
+   <% end %>
+</div>
+

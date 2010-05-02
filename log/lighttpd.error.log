@@ -1,0 +1,37 @@
+2008-05-08 00:08:18: (log.c.75) server started 
+2008-05-08 00:43:12: (log.c.75) server started 
+2008-05-08 00:49:34: (log.c.75) server started 
+2008-05-08 01:01:28: (log.c.75) server started 
+2008-05-08 01:01:45: (connections.c.1392) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.scgi 
+2008-05-08 01:01:45: (connections.c.1394) returning the original status 404 
+2008-05-08 01:01:45: (connections.c.1396) If this is a rails app: check your production.log 
+2008-05-08 01:04:56: (connections.c.1392) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.scgi 
+2008-05-08 01:04:56: (connections.c.1394) returning the original status 404 
+2008-05-08 01:04:56: (connections.c.1396) If this is a rails app: check your production.log 
+2008-05-08 01:11:10: (connections.c.1392) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.scgi 
+2008-05-08 01:11:10: (connections.c.1394) returning the original status 404 
+2008-05-08 01:11:10: (connections.c.1396) If this is a rails app: check your production.log 
+2008-05-08 01:14:26: (mod_scgi.c.2622) fcgi: got a FDEVENT_ERR. Don't know why. 
+2008-05-08 01:14:26: (mod_scgi.c.2444) emergency exit: scgi: connection-fd: 6 fcgi-fd: 7 
+2008-05-08 01:14:32: (log.c.75) server started 
+2008-05-08 01:14:35: (mod_scgi.c.2622) fcgi: got a FDEVENT_ERR. Don't know why. 
+2008-05-08 01:14:35: (mod_scgi.c.2444) emergency exit: scgi: connection-fd: 6 fcgi-fd: 7 
+2008-05-08 01:14:37: (mod_scgi.c.2622) fcgi: got a FDEVENT_ERR. Don't know why. 
+2008-05-08 01:14:37: (mod_scgi.c.2444) emergency exit: scgi: connection-fd: 6 fcgi-fd: 7 
+2008-05-08 01:18:09: (connections.c.1392) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.scgi 
+2008-05-08 01:18:09: (connections.c.1394) returning the original status 404 
+2008-05-08 01:18:09: (connections.c.1396) If this is a rails app: check your production.log 
+2008-05-08 01:18:25: (connections.c.1392) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.scgi 
+2008-05-08 01:18:25: (connections.c.1394) returning the original status 404 
+2008-05-08 01:18:25: (connections.c.1396) If this is a rails app: check your production.log 
+2008-05-08 01:18:31: (connections.c.1392) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.scgi 
+2008-05-08 01:18:31: (connections.c.1394) returning the original status 404 
+2008-05-08 01:18:31: (connections.c.1396) If this is a rails app: check your production.log 
+2008-05-08 01:18:33: (connections.c.1392) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.scgi 
+2008-05-08 01:18:33: (connections.c.1394) returning the original status 404 
+2008-05-08 01:18:33: (connections.c.1396) If this is a rails app: check your production.log 
+2008-05-08 05:04:51: (log.c.75) server started 
+2008-05-08 05:05:11: (log.c.75) server started 
+2008-05-08 05:06:33: (connections.c.1392) Warning: Either the error-handler returned status 404 or the error-handler itself was not found: /dispatch.scgi 
+2008-05-08 05:06:33: (connections.c.1394) returning the original status 404 
+2008-05-08 05:06:33: (connections.c.1396) If this is a rails app: check your production.log 

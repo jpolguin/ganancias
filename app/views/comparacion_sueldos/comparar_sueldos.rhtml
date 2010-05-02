@@ -1,0 +1,76 @@
+<div class="titulo_tabla"> 
+<h1 align="CENTER">Comparacion entre sueldo bruto actual de <%=@bruto_actual %> y futuro de <%=@bruto_futuro%> </h1>
+</div>
+<BR>
+<div class="entry" align="center" >
+  <table>
+  <tr class="fila_p" > 
+    <td>
+       <H3 ALIGN="CENTER"> Resultado de Comparacion</h3>   
+    </td>
+    <td class="columna_numero" >
+       <H3>Neto Actual Anual</h3>   
+     </td>
+    <td class="columna_numero" >
+       <H3>Neto Futuro Anual</h3>   
+     </td>
+    <td class="columna_numero" >
+       <H3>Diferencia Futuro - Actual</h3>   
+     </td>
+    <td class="columna_numero" >
+       <H3>Diferencia Mensual (promedio)</h3>   
+     </td>
+    <td class="columna_numero" >
+       <H3>Porcentaje de aumento</h3>   
+     </td>
+
+   </tr>
+   
+   <tr class="fila_i">
+      <td >
+       <span class="titulo_fila">Sin  Impuesto a las Ganancias </span>
+      </td> 
+       <td class="columna_numero">
+         <span class="price" ><%= number_to_currency(@neto_actual_sin_ganancia,:precision => 1) %></span>
+       </td>
+       <td class="columna_numero">
+         <span class="price" ><%= number_to_currency(@neto_futuro_sin_ganancia,:precision => 1) %></span>
+       </td>
+       <td class="columna_numero">
+         <span class="price" ><%= number_to_currency(@diferencia_sin_ganancia,:precision => 1) %></span>
+       </td>
+       <td class="columna_numero">
+         <span class="price" ><%= number_to_currency(@diferencia_mensual_sin_ganancia,:precision => 1) %></span>
+       </td>
+       <td class="columna_numero">
+         <span class="price" ><%= number_to_percentage(@procentaje_sin_ganancia,:precision => 1) %></span>
+       </td>
+
+
+  </tr> 
+   
+   <tr class="fila_i">
+      <td >
+       <span class="titulo_fila">Dif. Real con Imp. Ganancias</span>
+      </td> 
+      <td class="columna_numero">
+         <span class="pricebig" ><%= number_to_currency(@neto_actual_con_ganancia ,:precision => 1) %></span>
+     </td>
+      <td class="columna_numero">
+         <span class="pricebig" ><%= number_to_currency(@neto_futuro_con_ganancia ,:precision => 1) %></span>
+     </td>
+       <td class="columna_numero">
+         <span class="pricebig" ><%= number_to_currency(@diferencia_con_ganancia,:precision => 1) %></span>
+       </td>
+       <td class="columna_numero">
+         <span class="pricebig" ><%= number_to_currency(@diferencia_mensual_con_ganancia,:precision => 1) %></span>
+       </td>
+       <td class="columna_numero">
+         <span class="pricebig" ><%= number_to_percentage(@procentaje_con_ganancia,:precision => 1) %></span>
+       </td>
+
+   </tr> 
+
+</table>  
+</div>
+<BR>

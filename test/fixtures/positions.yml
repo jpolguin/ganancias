@@ -1,0 +1,17 @@
+--- 
+positions_000001: 
+  name: programador Java
+  id: "1"
+  description: Cargo de programador Tecnologia Java
+positions_000002: 
+  name: programador .NET
+  id: "2"
+  description: Cargo de programador Tecnologia .NET
+positions_000003: 
+  name: Arquitecto
+  id: "3"
+  description: Arquitecto de tecnologia abierta
+positions_000004: 
+  name: Analista Funcional
+  id: "4"
+  description: Analista funcional de proyectos

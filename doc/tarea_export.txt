@@ -1,0 +1,4 @@
+rake db:fixtures:export TABLE=revenue_taxes
+
+
+rake db:fixtures:export TABLE=assessment_components,lookups RAILS_ENV=test

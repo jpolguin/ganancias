@@ -1,0 +1,481 @@
+--- 
+reduction_taxes_000059: 
+  month: |
+    --- :diciembre
+
+  from_salary: "195000.00"
+  to_salary: "221000.00"
+  id: "59"
+  reduction_percentage: "0.90"
+reduction_taxes_000048: 
+  month: |
+    --- :octubre
+
+  from_salary: "108333.33"
+  to_salary: "162500.00"
+  id: "48"
+  reduction_percentage: "0.70"
+reduction_taxes_000037: 
+  month: |
+    --- :agosto
+
+  from_salary: "60666.67"
+  to_salary: "86666.67"
+  id: "37"
+  reduction_percentage: "0.50"
+reduction_taxes_000026: 
+  month: |
+    --- :junio
+
+  from_salary: "0.00"
+  to_salary: "45500.00"
+  id: "26"
+  reduction_percentage: "0.00"
+reduction_taxes_000015: 
+  month: |
+    --- :marzo
+
+  from_salary: "55250.00"
+  to_salary: "24999999.75"
+  id: "15"
+  reduction_percentage: "1.00"
+reduction_taxes_000004: 
+  month: |
+    --- :enero
+
+  from_salary: "16250.00"
+  to_salary: "18416.67"
+  id: "4"
+  reduction_percentage: "0.90"
+reduction_taxes_000060: 
+  month: |
+    --- :diciembre
+
+  from_salary: "221000.00"
+  to_salary: "99999999.00"
+  id: "60"
+  reduction_percentage: "1.00"
+reduction_taxes_000049: 
+  month: |
+    --- :octubre
+
+  from_salary: "162500.00"
+  to_salary: "184166.67"
+  id: "49"
+  reduction_percentage: "0.90"
+reduction_taxes_000038: 
+  month: |
+    --- :agosto
+
+  from_salary: "86666.67"
+  to_salary: "130000.00"
+  id: "38"
+  reduction_percentage: "0.70"
+reduction_taxes_000027: 
+  month: |
+    --- :junio
+
+  from_salary: "45500.00"
+  to_salary: "65000.00"
+  id: "27"
+  reduction_percentage: "0.50"
+reduction_taxes_000016: 
+  month: |
+    --- :abril
+
+  from_salary: "0.00"
+  to_salary: "30333.33"
+  id: "16"
+  reduction_percentage: "0.00"
+reduction_taxes_000005: 
+  month: |
+    --- :enero
+
+  from_salary: "18416.67"
+  to_salary: "8333333.25"
+  id: "5"
+  reduction_percentage: "1.00"
+reduction_taxes_000050: 
+  month: |
+    --- :octubre
+
+  from_salary: "184166.67"
+  to_salary: "83333332.50"
+  id: "50"
+  reduction_percentage: "1.00"
+reduction_taxes_000039: 
+  month: |
+    --- :agosto
+
+  from_salary: "130000.00"
+  to_salary: "147333.33"
+  id: "39"
+  reduction_percentage: "0.90"
+reduction_taxes_000028: 
+  month: |
+    --- :junio
+
+  from_salary: "65000.00"
+  to_salary: "97500.00"
+  id: "28"
+  reduction_percentage: "0.70"
+reduction_taxes_000017: 
+  month: |
+    --- :abril
+
+  from_salary: "30333.33"
+  to_salary: "43333.33"
+  id: "17"
+  reduction_percentage: "0.50"
+reduction_taxes_000006: 
+  month: |
+    --- :febrero
+
+  from_salary: "0.00"
+  to_salary: "15166.67"
+  id: "6"
+  reduction_percentage: "0.00"
+reduction_taxes_000051: 
+  month: |
+    --- :noviembre
+
+  from_salary: "0.00"
+  to_salary: "83416.67"
+  id: "51"
+  reduction_percentage: "0.00"
+reduction_taxes_000040: 
+  month: |
+    --- :agosto
+
+  from_salary: "147333.33"
+  to_salary: "66666666.00"
+  id: "40"
+  reduction_percentage: "1.00"
+reduction_taxes_000029: 
+  month: |
+    --- :junio
+
+  from_salary: "97500.00"
+  to_salary: "110500.00"
+  id: "29"
+  reduction_percentage: "0.90"
+reduction_taxes_000018: 
+  month: |
+    --- :abril
+
+  from_salary: "43333.33"
+  to_salary: "65000.00"
+  id: "18"
+  reduction_percentage: "0.70"
+reduction_taxes_000007: 
+  month: |
+    --- :febrero
+
+  from_salary: "15166.67"
+  to_salary: "21666.67"
+  id: "7"
+  reduction_percentage: "0.50"
+reduction_taxes_000052: 
+  month: |
+    --- :noviembre
+
+  from_salary: "83416.67"
+  to_salary: "119166.67"
+  id: "52"
+  reduction_percentage: "0.50"
+reduction_taxes_000041: 
+  month: |
+    --- :septiembre
+
+  from_salary: "0.00"
+  to_salary: "68250.00"
+  id: "41"
+  reduction_percentage: "0.00"
+reduction_taxes_000030: 
+  month: |
+    --- :junio
+
+  from_salary: "110500.00"
+  to_salary: "49999999.50"
+  id: "30"
+  reduction_percentage: "1.00"
+reduction_taxes_000019: 
+  month: |
+    --- :abril
+
+  from_salary: "65000.00"
+  to_salary: "73666.67"
+  id: "19"
+  reduction_percentage: "0.90"
+reduction_taxes_000008: 
+  month: |
+    --- :febrero
+
+  from_salary: "21666.67"
+  to_salary: "32500.00"
+  id: "8"
+  reduction_percentage: "0.70"
+reduction_taxes_000053: 
+  month: |
+    --- :noviembre
+
+  from_salary: "119166.67"
+  to_salary: "178750.00"
+  id: "53"
+  reduction_percentage: "0.70"
+reduction_taxes_000042: 
+  month: |
+    --- :septiembre
+
+  from_salary: "68250.00"
+  to_salary: "97500.00"
+  id: "42"
+  reduction_percentage: "0.50"
+reduction_taxes_000031: 
+  month: |
+    --- :julio
+
+  from_salary: "0.00"
+  to_salary: "53083.33"
+  id: "31"
+  reduction_percentage: "0.00"
+reduction_taxes_000020: 
+  month: |
+    --- :abril
+
+  from_salary: "73666.67"
+  to_salary: "33333333.00"
+  id: "20"
+  reduction_percentage: "1.00"
+reduction_taxes_000009: 
+  month: |
+    --- :febrero
+
+  from_salary: "32500.00"
+  to_salary: "36833.33"
+  id: "9"
+  reduction_percentage: "0.90"
+reduction_taxes_000054: 
+  month: |
+    --- :noviembre
+
+  from_salary: "178750.00"
+  to_salary: "202583.33"
+  id: "54"
+  reduction_percentage: "0.90"
+reduction_taxes_000043: 
+  month: |
+    --- :septiembre
+
+  from_salary: "97500.00"
+  to_salary: "146250.00"
+  id: "43"
+  reduction_percentage: "0.70"
+reduction_taxes_000032: 
+  month: |
+    --- :julio
+
+  from_salary: "53083.33"
+  to_salary: "75833.33"
+  id: "32"
+  reduction_percentage: "0.50"
+reduction_taxes_000021: 
+  month: |
+    --- :mayo
+
+  from_salary: "0.00"
+  to_salary: "37916.67"
+  id: "21"
+  reduction_percentage: "0.00"
+reduction_taxes_000010: 
+  month: |
+    --- :febrero
+
+  from_salary: "36833.33"
+  to_salary: "16666666.50"
+  id: "10"
+  reduction_percentage: "1.00"
+reduction_taxes_000055: 
+  month: |
+    --- :noviembre
+
+  from_salary: "202583.33"
+  to_salary: "91666665.75"
+  id: "55"
+  reduction_percentage: "1.00"
+reduction_taxes_000044: 
+  month: |
+    --- :septiembre
+
+  from_salary: "146250.00"
+  to_salary: "165750.00"
+  id: "44"
+  reduction_percentage: "0.90"
+reduction_taxes_000033: 
+  month: |
+    --- :julio
+
+  from_salary: "75833.33"
+  to_salary: "113750.00"
+  id: "33"
+  reduction_percentage: "0.70"
+reduction_taxes_000022: 
+  month: |
+    --- :mayo
+
+  from_salary: "37916.67"
+  to_salary: "54166.67"
+  id: "22"
+  reduction_percentage: "0.50"
+reduction_taxes_000011: 
+  month: |
+    --- :marzo
+
+  from_salary: "0.00"
+  to_salary: "22750.00"
+  id: "11"
+  reduction_percentage: "0.00"
+reduction_taxes_000056: 
+  month: |
+    --- :diciembre
+
+  from_salary: "0.00"
+  to_salary: "91000.00"
+  id: "56"
+  reduction_percentage: "0.00"
+reduction_taxes_000045: 
+  month: |
+    --- :septiembre
+
+  from_salary: "165750.00"
+  to_salary: "74999999.25"
+  id: "45"
+  reduction_percentage: "1.00"
+reduction_taxes_000034: 
+  month: |
+    --- :julio
+
+  from_salary: "113750.00"
+  to_salary: "128916.67"
+  id: "34"
+  reduction_percentage: "0.90"
+reduction_taxes_000023: 
+  month: |
+    --- :mayo
+
+  from_salary: "54166.67"
+  to_salary: "81250.00"
+  id: "23"
+  reduction_percentage: "0.70"
+reduction_taxes_000012: 
+  month: |
+    --- :marzo
+
+  from_salary: "22750.00"
+  to_salary: "32500.00"
+  id: "12"
+  reduction_percentage: "0.50"
+reduction_taxes_000001: 
+  month: |
+    --- :enero
+
+  from_salary: "0.00"
+  to_salary: "7583.33"
+  id: "1"
+  reduction_percentage: "0.00"
+reduction_taxes_000057: 
+  month: |
+    --- :diciembre
+
+  from_salary: "91000.00"
+  to_salary: "130000.00"
+  id: "57"
+  reduction_percentage: "0.50"
+reduction_taxes_000046: 
+  month: |
+    --- :octubre
+
+  from_salary: "0.00"
+  to_salary: "75833.33"
+  id: "46"
+  reduction_percentage: "0.00"
+reduction_taxes_000035: 
+  month: |
+    --- :julio
+
+  from_salary: "128916.67"
+  to_salary: "58333332.75"
+  id: "35"
+  reduction_percentage: "1.00"
+reduction_taxes_000024: 
+  month: |
+    --- :mayo
+
+  from_salary: "81250.00"
+  to_salary: "92083.33"
+  id: "24"
+  reduction_percentage: "0.90"
+reduction_taxes_000013: 
+  month: |
+    --- :marzo
+
+  from_salary: "32500.00"
+  to_salary: "48750.00"
+  id: "13"
+  reduction_percentage: "0.70"
+reduction_taxes_000002: 
+  month: |
+    --- :enero
+
+  from_salary: "7583.33"
+  to_salary: "10833.33"
+  id: "2"
+  reduction_percentage: "0.50"
+reduction_taxes_000058: 
+  month: |
+    --- :diciembre
+
+  from_salary: "130000.00"
+  to_salary: "195000.00"
+  id: "58"
+  reduction_percentage: "0.70"
+reduction_taxes_000047: 
+  month: |
+    --- :octubre
+
+  from_salary: "75833.33"
+  to_salary: "108333.33"
+  id: "47"
+  reduction_percentage: "0.50"
+reduction_taxes_000036: 
+  month: |
+    --- :agosto
+
+  from_salary: "0.00"
+  to_salary: "60666.67"
+  id: "36"
+  reduction_percentage: "0.00"
+reduction_taxes_000025: 
+  month: |
+    --- :mayo
+
+  from_salary: "92083.33"
+  to_salary: "41666666.25"
+  id: "25"
+  reduction_percentage: "1.00"
+reduction_taxes_000014: 
+  month: |
+    --- :marzo
+
+  from_salary: "48750.00"
+  to_salary: "55250.00"
+  id: "14"
+  reduction_percentage: "0.90"
+reduction_taxes_000003: 
+  month: |
+    --- :enero
+
+  from_salary: "10833.33"
+  to_salary: "16250.00"
+  id: "3"
+  reduction_percentage: "0.70"

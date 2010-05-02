@@ -1,0 +1,757 @@
+--- 
+revenue_taxes_000067: 
+  month: |
+    --- :octubre
+
+  tax_rate: "0.23"
+  from_salary: "25000.00"
+  to_salary: "50000.00"
+  tax_amount: "3500.00"
+  id: "67"
+revenue_taxes_000004: 
+  month: |
+    --- :enero
+
+  tax_rate: "0.23"
+  from_salary: "2500.00"
+  to_salary: "5000.00"
+  tax_amount: "350.00"
+  id: "4"
+revenue_taxes_000025: 
+  month: |
+    --- :abril
+
+  tax_rate: "0.23"
+  from_salary: "10000.00"
+  to_salary: "20000.00"
+  tax_amount: "1400.00"
+  id: "25"
+revenue_taxes_000046: 
+  month: |
+    --- :julio
+
+  tax_rate: "0.23"
+  from_salary: "17500.00"
+  to_salary: "35000.00"
+  tax_amount: "2450.00"
+  id: "46"
+revenue_taxes_000068: 
+  month: |
+    --- :octubre
+
+  tax_rate: "0.27"
+  from_salary: "50000.00"
+  to_salary: "75000.00"
+  tax_amount: "9250.00"
+  id: "68"
+revenue_taxes_000005: 
+  month: |
+    --- :enero
+
+  tax_rate: "0.27"
+  from_salary: "5000.00"
+  to_salary: "7500.00"
+  tax_amount: "925.00"
+  id: "5"
+revenue_taxes_000026: 
+  month: |
+    --- :abril
+
+  tax_rate: "0.27"
+  from_salary: "20000.00"
+  to_salary: "30000.00"
+  tax_amount: "3700.00"
+  id: "26"
+revenue_taxes_000047: 
+  month: |
+    --- :julio
+
+  tax_rate: "0.27"
+  from_salary: "35000.00"
+  to_salary: "52500.00"
+  tax_amount: "6475.00"
+  id: "47"
+revenue_taxes_000070: 
+  month: |
+    --- :octubre
+
+  tax_rate: "0.35"
+  from_salary: "100000.00"
+  to_salary: "83333332.50"
+  tax_amount: "23750.00"
+  id: "70"
+revenue_taxes_000069: 
+  month: |
+    --- :octubre
+
+  tax_rate: "0.31"
+  from_salary: "75000.00"
+  to_salary: "100000.00"
+  tax_amount: "16000.00"
+  id: "69"
+revenue_taxes_000006: 
+  month: |
+    --- :enero
+
+  tax_rate: "0.31"
+  from_salary: "7500.00"
+  to_salary: "10000.00"
+  tax_amount: "1600.00"
+  id: "6"
+revenue_taxes_000027: 
+  month: |
+    --- :abril
+
+  tax_rate: "0.31"
+  from_salary: "30000.00"
+  to_salary: "40000.00"
+  tax_amount: "6400.00"
+  id: "27"
+revenue_taxes_000048: 
+  month: |
+    --- :julio
+
+  tax_rate: "0.31"
+  from_salary: "52500.00"
+  to_salary: "70000.00"
+  tax_amount: "11200.00"
+  id: "48"
+revenue_taxes_000071: 
+  month: |
+    --- :noviembre
+
+  tax_rate: "0.09"
+  from_salary: "0.00"
+  to_salary: "9166.67"
+  tax_amount: "0.00"
+  id: "71"
+revenue_taxes_000007: 
+  month: |
+    --- :enero
+
+  tax_rate: "0.35"
+  from_salary: "10000.00"
+  to_salary: "8333333.25"
+  tax_amount: "2375.00"
+  id: "7"
+revenue_taxes_000028: 
+  month: |
+    --- :abril
+
+  tax_rate: "0.35"
+  from_salary: "40000.00"
+  to_salary: "33333333.00"
+  tax_amount: "9500.00"
+  id: "28"
+revenue_taxes_000050: 
+  month: |
+    --- :agosto
+
+  tax_rate: "0.09"
+  from_salary: "0.00"
+  to_salary: "6666.67"
+  tax_amount: "0.00"
+  id: "50"
+revenue_taxes_000049: 
+  month: |
+    --- :julio
+
+  tax_rate: "0.35"
+  from_salary: "70000.00"
+  to_salary: "58333332.75"
+  tax_amount: "16625.00"
+  id: "49"
+revenue_taxes_000072: 
+  month: |
+    --- :noviembre
+
+  tax_rate: "0.14"
+  from_salary: "9166.67"
+  to_salary: "18333.33"
+  tax_amount: "825.00"
+  id: "72"
+revenue_taxes_000008: 
+  month: |
+    --- :febrero
+
+  tax_rate: "0.09"
+  from_salary: "0.00"
+  to_salary: "1666.67"
+  tax_amount: "0.00"
+  id: "8"
+revenue_taxes_000030: 
+  month: |
+    --- :mayo
+
+  tax_rate: "0.14"
+  from_salary: "4166.67"
+  to_salary: "8333.33"
+  tax_amount: "375.00"
+  id: "30"
+revenue_taxes_000029: 
+  month: |
+    --- :mayo
+
+  tax_rate: "0.09"
+  from_salary: "0.00"
+  to_salary: "4166.67"
+  tax_amount: "0.00"
+  id: "29"
+revenue_taxes_000051: 
+  month: |
+    --- :agosto
+
+  tax_rate: "0.14"
+  from_salary: "6666.67"
+  to_salary: "13333.33"
+  tax_amount: "600.00"
+  id: "51"
+revenue_taxes_000073: 
+  month: |
+    --- :noviembre
+
+  tax_rate: "0.19"
+  from_salary: "18333.33"
+  to_salary: "27500.00"
+  tax_amount: "2108.33"
+  id: "73"
+revenue_taxes_000052: 
+  month: |
+    --- :agosto
+
+  tax_rate: "0.19"
+  from_salary: "13333.33"
+  to_salary: "20000.00"
+  tax_amount: "1533.33"
+  id: "52"
+revenue_taxes_000010: 
+  month: |
+    --- :febrero
+
+  tax_rate: "0.19"
+  from_salary: "3333.33"
+  to_salary: "5000.00"
+  tax_amount: "383.33"
+  id: "10"
+revenue_taxes_000009: 
+  month: |
+    --- :febrero
+
+  tax_rate: "0.14"
+  from_salary: "1666.67"
+  to_salary: "3333.33"
+  tax_amount: "150.00"
+  id: "9"
+revenue_taxes_000031: 
+  month: |
+    --- :mayo
+
+  tax_rate: "0.19"
+  from_salary: "8333.33"
+  to_salary: "12500.00"
+  tax_amount: "958.33"
+  id: "31"
+revenue_taxes_000074: 
+  month: |
+    --- :noviembre
+
+  tax_rate: "0.23"
+  from_salary: "27500.00"
+  to_salary: "55000.00"
+  tax_amount: "3850.00"
+  id: "74"
+revenue_taxes_000011: 
+  month: |
+    --- :febrero
+
+  tax_rate: "0.23"
+  from_salary: "5000.00"
+  to_salary: "10000.00"
+  tax_amount: "700.00"
+  id: "11"
+revenue_taxes_000032: 
+  month: |
+    --- :mayo
+
+  tax_rate: "0.23"
+  from_salary: "12500.00"
+  to_salary: "25000.00"
+  tax_amount: "1750.00"
+  id: "32"
+revenue_taxes_000053: 
+  month: |
+    --- :agosto
+
+  tax_rate: "0.23"
+  from_salary: "20000.00"
+  to_salary: "40000.00"
+  tax_amount: "2800.00"
+  id: "53"
+revenue_taxes_000075: 
+  month: |
+    --- :noviembre
+
+  tax_rate: "0.27"
+  from_salary: "55000.00"
+  to_salary: "82500.00"
+  tax_amount: "10175.00"
+  id: "75"
+revenue_taxes_000012: 
+  month: |
+    --- :febrero
+
+  tax_rate: "0.27"
+  from_salary: "10000.00"
+  to_salary: "15000.00"
+  tax_amount: "1850.00"
+  id: "12"
+revenue_taxes_000033: 
+  month: |
+    --- :mayo
+
+  tax_rate: "0.27"
+  from_salary: "25000.00"
+  to_salary: "37500.00"
+  tax_amount: "4625.00"
+  id: "33"
+revenue_taxes_000054: 
+  month: |
+    --- :agosto
+
+  tax_rate: "0.27"
+  from_salary: "40000.00"
+  to_salary: "60000.00"
+  tax_amount: "7400.00"
+  id: "54"
+revenue_taxes_000076: 
+  month: |
+    --- :noviembre
+
+  tax_rate: "0.31"
+  from_salary: "82500.00"
+  to_salary: "110000.00"
+  tax_amount: "17600.00"
+  id: "76"
+revenue_taxes_000013: 
+  month: |
+    --- :febrero
+
+  tax_rate: "0.31"
+  from_salary: "15000.00"
+  to_salary: "20000.00"
+  tax_amount: "3200.00"
+  id: "13"
+revenue_taxes_000034: 
+  month: |
+    --- :mayo
+
+  tax_rate: "0.31"
+  from_salary: "37500.00"
+  to_salary: "50000.00"
+  tax_amount: "8000.00"
+  id: "34"
+revenue_taxes_000055: 
+  month: |
+    --- :agosto
+
+  tax_rate: "0.31"
+  from_salary: "60000.00"
+  to_salary: "80000.00"
+  tax_amount: "12800.00"
+  id: "55"
+revenue_taxes_000077: 
+  month: |
+    --- :noviembre
+
+  tax_rate: "0.35"
+  from_salary: "110000.00"
+  to_salary: "91666665.75"
+  tax_amount: "26125.00"
+  id: "77"
+revenue_taxes_000014: 
+  month: |
+    --- :febrero
+
+  tax_rate: "0.35"
+  from_salary: "20000.00"
+  to_salary: "16666666.50"
+  tax_amount: "4750.00"
+  id: "14"
+revenue_taxes_000035: 
+  month: |
+    --- :mayo
+
+  tax_rate: "0.35"
+  from_salary: "50000.00"
+  to_salary: "41666666.25"
+  tax_amount: "11875.00"
+  id: "35"
+revenue_taxes_000056: 
+  month: |
+    --- :agosto
+
+  tax_rate: "0.35"
+  from_salary: "80000.00"
+  to_salary: "66666666.00"
+  tax_amount: "19000.00"
+  id: "56"
+revenue_taxes_000078: 
+  month: |
+    --- :diciembre
+
+  tax_rate: "0.09"
+  from_salary: "0.00"
+  to_salary: "10000.00"
+  tax_amount: "0.00"
+  id: "78"
+revenue_taxes_000015: 
+  month: |
+    --- :marzo
+
+  tax_rate: "0.09"
+  from_salary: "0.00"
+  to_salary: "2500.00"
+  tax_amount: "0.00"
+  id: "15"
+revenue_taxes_000036: 
+  month: |
+    --- :junio
+
+  tax_rate: "0.09"
+  from_salary: "0.00"
+  to_salary: "5000.00"
+  tax_amount: "0.00"
+  id: "36"
+revenue_taxes_000057: 
+  month: |
+    --- :septiembre
+
+  tax_rate: "0.09"
+  from_salary: "0.00"
+  to_salary: "7500.00"
+  tax_amount: "0.00"
+  id: "57"
+revenue_taxes_000080: 
+  month: |
+    --- :diciembre
+
+  tax_rate: "0.19"
+  from_salary: "20000.00"
+  to_salary: "30000.00"
+  tax_amount: "2300.00"
+  id: "80"
+revenue_taxes_000079: 
+  month: |
+    --- :diciembre
+
+  tax_rate: "0.14"
+  from_salary: "10000.00"
+  to_salary: "20000.00"
+  tax_amount: "900.00"
+  id: "79"
+revenue_taxes_000016: 
+  month: |
+    --- :marzo
+
+  tax_rate: "0.14"
+  from_salary: "2500.00"
+  to_salary: "5000.00"
+  tax_amount: "225.00"
+  id: "16"
+revenue_taxes_000037: 
+  month: |
+    --- :junio
+
+  tax_rate: "0.14"
+  from_salary: "5000.00"
+  to_salary: "10000.00"
+  tax_amount: "450.00"
+  id: "37"
+revenue_taxes_000058: 
+  month: |
+    --- :septiembre
+
+  tax_rate: "0.14"
+  from_salary: "7500.00"
+  to_salary: "15000.00"
+  tax_amount: "675.00"
+  id: "58"
+revenue_taxes_000081: 
+  month: |
+    --- :diciembre
+
+  tax_rate: "0.23"
+  from_salary: "30000.00"
+  to_salary: "60000.00"
+  tax_amount: "4200.00"
+  id: "81"
+revenue_taxes_000017: 
+  month: |
+    --- :marzo
+
+  tax_rate: "0.19"
+  from_salary: "5000.00"
+  to_salary: "7500.00"
+  tax_amount: "575.00"
+  id: "17"
+revenue_taxes_000038: 
+  month: |
+    --- :junio
+
+  tax_rate: "0.19"
+  from_salary: "10000.00"
+  to_salary: "15000.00"
+  tax_amount: "1150.00"
+  id: "38"
+revenue_taxes_000060: 
+  month: |
+    --- :septiembre
+
+  tax_rate: "0.23"
+  from_salary: "22500.00"
+  to_salary: "45000.00"
+  tax_amount: "3150.00"
+  id: "60"
+revenue_taxes_000059: 
+  month: |
+    --- :septiembre
+
+  tax_rate: "0.19"
+  from_salary: "15000.00"
+  to_salary: "22500.00"
+  tax_amount: "1725.00"
+  id: "59"
+revenue_taxes_000082: 
+  month: |
+    --- :diciembre
+
+  tax_rate: "0.27"
+  from_salary: "60000.00"
+  to_salary: "90000.00"
+  tax_amount: "11100.00"
+  id: "82"
+revenue_taxes_000018: 
+  month: |
+    --- :marzo
+
+  tax_rate: "0.23"
+  from_salary: "7500.00"
+  to_salary: "15000.00"
+  tax_amount: "1050.00"
+  id: "18"
+revenue_taxes_000040: 
+  month: |
+    --- :junio
+
+  tax_rate: "0.27"
+  from_salary: "30000.00"
+  to_salary: "45000.00"
+  tax_amount: "5550.00"
+  id: "40"
+revenue_taxes_000039: 
+  month: |
+    --- :junio
+
+  tax_rate: "0.23"
+  from_salary: "15000.00"
+  to_salary: "30000.00"
+  tax_amount: "2100.00"
+  id: "39"
+revenue_taxes_000061: 
+  month: |
+    --- :septiembre
+
+  tax_rate: "0.27"
+  from_salary: "45000.00"
+  to_salary: "67500.00"
+  tax_amount: "8325.00"
+  id: "61"
+revenue_taxes_000083: 
+  month: |
+    --- :diciembre
+
+  tax_rate: "0.31"
+  from_salary: "90000.00"
+  to_salary: "120000.00"
+  tax_amount: "19200.00"
+  id: "83"
+revenue_taxes_000019: 
+  month: |
+    --- :marzo
+
+  tax_rate: "0.27"
+  from_salary: "15000.00"
+  to_salary: "22500.00"
+  tax_amount: "2775.00"
+  id: "19"
+revenue_taxes_000041: 
+  month: |
+    --- :junio
+
+  tax_rate: "0.31"
+  from_salary: "45000.00"
+  to_salary: "60000.00"
+  tax_amount: "9600.00"
+  id: "41"
+revenue_taxes_000062: 
+  month: |
+    --- :septiembre
+
+  tax_rate: "0.31"
+  from_salary: "67500.00"
+  to_salary: "90000.00"
+  tax_amount: "14400.00"
+  id: "62"
+revenue_taxes_000020: 
+  month: |
+    --- :marzo
+
+  tax_rate: "0.31"
+  from_salary: "22500.00"
+  to_salary: "30000.00"
+  tax_amount: "4800.00"
+  id: "20"
+revenue_taxes_000084: 
+  month: |
+    --- :diciembre
+
+  tax_rate: "0.35"
+  from_salary: "120000.00"
+  to_salary: "99999999.00"
+  tax_amount: "28500.00"
+  id: "84"
+revenue_taxes_000063: 
+  month: |
+    --- :septiembre
+
+  tax_rate: "0.35"
+  from_salary: "90000.00"
+  to_salary: "74999999.25"
+  tax_amount: "21375.00"
+  id: "63"
+revenue_taxes_000021: 
+  month: |
+    --- :marzo
+
+  tax_rate: "0.35"
+  from_salary: "30000.00"
+  to_salary: "24999999.75"
+  tax_amount: "7125.00"
+  id: "21"
+revenue_taxes_000042: 
+  month: |
+    --- :junio
+
+  tax_rate: "0.35"
+  from_salary: "60000.00"
+  to_salary: "49999999.50"
+  tax_amount: "14250.00"
+  id: "42"
+revenue_taxes_000001: 
+  month: |
+    --- :enero
+
+  tax_rate: "0.09"
+  from_salary: "0.00"
+  to_salary: "833.33"
+  tax_amount: "0.00"
+  id: "1"
+revenue_taxes_000022: 
+  month: |
+    --- :abril
+
+  tax_rate: "0.09"
+  from_salary: "0.00"
+  to_salary: "3333.33"
+  tax_amount: "0.00"
+  id: "22"
+revenue_taxes_000043: 
+  month: |
+    --- :julio
+
+  tax_rate: "0.09"
+  from_salary: "0.00"
+  to_salary: "5833.33"
+  tax_amount: "0.00"
+  id: "43"
+revenue_taxes_000064: 
+  month: |
+    --- :octubre
+
+  tax_rate: "0.09"
+  from_salary: "0.00"
+  to_salary: "8333.33"
+  tax_amount: "0.00"
+  id: "64"
+revenue_taxes_000002: 
+  month: |
+    --- :enero
+
+  tax_rate: "0.14"
+  from_salary: "833.33"
+  to_salary: "1666.67"
+  tax_amount: "75.00"
+  id: "2"
+revenue_taxes_000023: 
+  month: |
+    --- :abril
+
+  tax_rate: "0.14"
+  from_salary: "3333.33"
+  to_salary: "6666.67"
+  tax_amount: "300.00"
+  id: "23"
+revenue_taxes_000044: 
+  month: |
+    --- :julio
+
+  tax_rate: "0.14"
+  from_salary: "5833.33"
+  to_salary: "11666.67"
+  tax_amount: "525.00"
+  id: "44"
+revenue_taxes_000065: 
+  month: |
+    --- :octubre
+
+  tax_rate: "0.14"
+  from_salary: "8333.33"
+  to_salary: "16666.67"
+  tax_amount: "750.00"
+  id: "65"
+revenue_taxes_000003: 
+  month: |
+    --- :enero
+
+  tax_rate: "0.19"
+  from_salary: "1666.67"
+  to_salary: "2500.00"
+  tax_amount: "191.67"
+  id: "3"
+revenue_taxes_000024: 
+  month: |
+    --- :abril
+
+  tax_rate: "0.19"
+  from_salary: "6666.67"
+  to_salary: "10000.00"
+  tax_amount: "766.67"
+  id: "24"
+revenue_taxes_000045: 
+  month: |
+    --- :julio
+
+  tax_rate: "0.19"
+  from_salary: "11666.67"
+  to_salary: "17500.00"
+  tax_amount: "1341.67"
+  id: "45"
+revenue_taxes_000066: 
+  month: |
+    --- :octubre
+
+  tax_rate: "0.19"
+  from_salary: "16666.67"
+  to_salary: "25000.00"
+  tax_amount: "1916.67"
+  id: "66"

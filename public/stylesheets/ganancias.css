@@ -1,0 +1,469 @@
+/* Global styles */
+
+body {
+	margin-bottom: 0px;
+	margin: 0;
+  	width:100%;
+  	height:768;
+  	background: #eeeeee;
+}
+
+#notice {
+border: 2px solid red;
+padding: 1em;
+margin-bottom: 2em;
+background-color: #f0f0f0 ;
+font: bold smaller sans-serif;
+}
+/* Styles for admin/list */
+#product-list .list-title {
+color: #244 ;
+font-weight: bold;
+font-size: larger;
+}
+#product-list .list-image {
+width: 60px;
+height: 70px;
+}
+#product-list .list-actions {
+font-size: x-small;
+text-align: right;
+padding-left: 1em;
+}
+#product-list .list-line-even {
+background: #e0f8f8 ;
+}
+#product-list .list-line-odd {
+background: #f8b0f8 ;
+}
+/* Styles for main page */
+#banner {
+background: #9c9 ;
+padding-top: 10px;
+padding-bottom: 6px;
+border-bottom: 2px solid;
+font: small-caps 40px/40px "Times New Roman", serif;
+color: #282 ;
+text-align: center;
+}
+
+#pieads  {
+text-align:center;
+padding-top: 2em;
+
+}
+
+#bannermenu {
+background: #9c9 ;
+padding-left: 1em;
+padding-bottom: 1px;
+/*padding-top: 5px;
+border-bottom: 2px solid;*/
+font: bold 15px/15px "Times New Roman", serif;
+color: #282 ;
+text-align: left;
+}
+
+#banner .beta {
+background: #9c9 ;
+/*padding-top: 5px;
+border-bottom: 2px solid;*/
+font: bold 12px/12px "Times New Roman", serif;
+color: #282 ;
+text-align: left;
+}
+
+a.a:link {
+	font-family: tahoma;
+	font-size: 14px;
+	font-weight: normal;
+	color: 117148;
+	text-decoration: underline;
+}
+a.a:hover {
+	font-family: tahoma;
+	font-size: 14px;
+	font-weight: normal;
+	color: #233333;
+	text-decoration: none;
+}
+a.a:visited {
+	font-family: tahoma;
+	font-size: 14px;
+	font-weight: normal;
+	color: 117148;
+	text-decoration: underline;
+}
+
+
+
+a.d:link {
+        color: #dfd ;
+        background: #141 ;
+        font-family: sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-decoration: underline;
+}
+a.d:hover {
+        color: #dfd ;
+        background: #141 ;
+        font-family: sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-decoration: none;
+}
+a.d:visited {
+        color: #dfd ;
+        background: #141 ;
+        font-family: sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+
+
+
+
+#banner img {
+float: left;
+}
+#columns {
+float: left;    
+background:  #eeeeee ;
+}
+#main {
+margin-left: 5em;
+padding-top: 0.5em;
+padding-left: 1em;
+background: #eeeeee;
+}
+
+
+
+.slidedoormenu{
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 100px; /* width of menu (don't forget to add border with below!) */
+border-left: 8px solid #ffa1a3; /* thick left border of menu */
+
+}
+
+.slidedoormenu li{
+border-bottom: 1px solid #885b5c; /* Gray border beneath each menu item */
+}
+
+.slidedoormenu li a{
+background: white url(vstripver2.jpg) repeat-y left top; /* Background image positioned to the left(v) top(h) corner initially */
+font: bold 13px "Lucida Grande", "Trebuchet MS", Verdana;
+display: block;
+color: black;
+width: auto;
+border-bottom: 1px solid white; /* White border beneath each menu item link, to add depth */
+padding: 7px 0; /* Vertical (top/bottom) padding for each menu link */
+text-indent: 8px;
+text-decoration: none;
+}
+
+.slidedoormenu li a:visited, .slidedoormenu li a:active{
+color: black;
+}
+
+.slidedoormenu li a:hover{
+background-position: -387px 0; /* Shift background image horizontally 387px, or the start of the 2nd background image */
+color: black;
+}
+
+.slidedoormenu li.lastitem, .slidedoormenu li.lastitem a{
+border-bottom-width: 0; /* For last menu item within menu, remove bottom border */
+}
+
+.slidedoormenu li.lastitem a{
+padding: 8px 0; /* increase vertical border of last menu link by 2px (default is padding: 7px 0) to account for removed border width */
+}
+
+
+
+#side {
+float: left;
+padding-top: 1em;
+padding-left: 1em;
+padding-bottom: 1em;
+width: 4em;
+background: #141 ;
+}
+
+#side a {
+color: #bfb ;
+font-size: 120% ;
+}
+h1 {
+font: 120% sans-serif;
+color: #226 ;
+border-bottom:  #77d ;
+}
+/* And entry in the ganancia catalog */
+
+#ganancia .titulo_tabla h1 {
+font: 120% sans-serif;
+color: #226 ;
+border-bottom:  #77d ;
+padding-right: 16em;
+}
+
+#ganancia .titulo_tabla h1, #ganancia .titulo_tabla a {
+display: inline;
+}
+
+
+#ganancia .entry {
+border-bottom: 1px dotted #77d ;
+}
+
+#ganancia .entry .fila_p {
+background-color: #9c9; color: black;
+}
+
+#ganancia .entry .fila_i {
+background-color: #bfb; color: black;
+}
+
+#ganancia .title {
+font-size: 120%;
+font-family: sans-serif;
+}
+
+#ganancia .entry label {
+font-family: sans-serif;
+width: 400px;
+text-align: right;
+
+}
+
+#ganancia .entry img {
+width: 75px;
+float: left;
+}
+#ganancia .entry h3 {
+margin-bottom: 2px;
+color: #227 ;
+}
+#ganancia .entry p {
+margin-top: 0px;
+margin-bottom: 0.8em;
+}
+#ganancia .entry .price-line {
+}
+#ganancia .entry .add-to-cart {
+position: relative;
+}
+#ganancia .entry .titulo_fila {
+text-align: left;   
+color: #44a;
+font-weight: bold;
+margin-right: 0em;
+font-family: Arial,Helvetica,sans-serif;
+font-size: 80%;
+}
+
+#ganancia .entry .columna_numero {
+width:6em;
+text-align: center;
+vertical-align: middle;
+
+}
+
+#ganancia .salary-form .entry .columna_numero_chico {
+width:4em;
+text-align: justify;
+vertical-align: middle;
+font-size: 80%;
+}
+#ganancia .entry .pricebig {
+color: #44a;
+margin-right: 0em;
+font-family: Verdana;
+font-size: 13px;
+font-style: normal;
+line-height: normal;
+font-weight: bold;
+font-variant: normal;
+text-transform: none;
+text-align: center;
+
+}
+
+#ganancia .entry .price {
+color: #44a;
+margin-right: 0em;
+/*font-family: Arial,Helvetica,sans-serif;
+font-size: 80%;*/
+font-family: Verdana;
+font-size: 10px;
+font-style: normal;
+line-height: normal;
+font-weight: bold;
+font-variant: normal;
+text-transform: none;
+text-align: center;
+}
+#ganancia .entry form, #ganancia .entry form div {
+display: inline;
+}
+/* Styles for the cart in the main page and the sidebar */
+.cart-title {
+font: 120% bold;
+}
+.item-price, .total-line {
+text-align: right;
+}
+
+
+.total-line .total-cell {
+font-weight: bold;
+border-top: 1px solid #595 ;
+}
+/* Styles for the cart in the sidebar */
+#cart, #cart table {
+font-size: smaller;
+color: white;
+
+}
+#cart table {
+border-top: 1px dotted #595 ;
+border-bottom: 1px dotted #595 ;
+margin-bottom: 10px;
+}
+/* Styles for order form */
+.salary-form fieldset {
+background: #efe;
+}
+.salary-form legend {
+color: #dfd ;
+background: #141 ;
+font-family: sans-serif;
+padding: 0.2em 1em;
+}
+.salary-form label {
+width: 7em;
+/*float: left;*/
+text-align: left;
+margin-right:0.5em;
+/*display: block;*/
+}
+
+
+.salary-form .submit {
+margin-left: 30em;
+align:center
+}
+
+/* The error box */
+.fieldWithErrors {
+padding: 2px;
+background-color: red;
+display: table;
+}
+#errorExplanation {
+width: 400px;
+border: 2px solid red;
+padding: 7px;
+padding-bottom: 12px;
+margin-bottom: 20px;
+background-color: #f0f0f0 ;
+}
+#errorExplanation h2 {
+text-align: left;
+font-weight: bold;
+padding: 5px 5px 5px 15px;
+
+font-size: 12px;
+margin: -7px;
+background-color: #c00 ;
+color: #fff ;
+}
+#errorExplanation p {
+color: #333 ;
+margin-bottom: 0;
+padding: 5px;
+}
+#errorExplanation ul li {
+font-size: 12px;
+list-style: square;
+}
+a.menulink {
+display: block;
+width: 80px;
+text-align: left;
+text-decoration: none;
+font-family: tahoma;
+font-size:11px;
+color: #000000;
+border: none;
+border: solid 1px #FFFFFF;
+}
+
+a.menulink:hover {
+border: solid 1px #6100C1;
+background-color:#9c9;
+}
+
+
+#menuside a.menulink {
+display: block;
+width: 80px;
+text-align: left;
+text-decoration: none;
+font-family: tahoma;
+font-size:11px;
+color: #000000;
+border: none;
+border: solid 1px #FFFFFF;
+}
+
+#menuside a.menulink:hover {
+border: solid 1px #6100C1;
+background-color:#9c9;
+}
+
+#menuside {
+float:left;
+text-align:left;
+padding-top: 0em;
+padding-left: 0em;
+padding-bottom: 0em;
+padding-right: 0em;
+width:3em;
+background: #eeeeee;
+}
+
+#ayuda {
+background: #efe;
+width:90%;
+}
+
+
+#ayuda .tabla_ayuda{
+color: #00000;
+border: none;
+font-family: sans-serif;
+padding: 5em em;
+}
+
+#ayuda .pregunta_ayuda {
+color: #dfd ;
+background: #141 ;
+}
+
+#ayuda label {
+color: #141;
+
+}
+
+#ayuda a:link,a:hover, a:visited {
+color: #141;
+font-weight: bold;
+}
+

@@ -1,0 +1,8 @@
+<td >
+    <span class="titulo_fila" title="<%= ayuda_titulo %>" ><%= titulo_fila %> </span>
+</td> 
+<% for mes in Salary::MONTHS -%>
+<td class="columna_numero">
+ <span  class="price" title="<%= number_to_currency(hash_datos_anual[mes])%>"  ><%= number_to_currency(hash_datos_anual[mes],:precision => 1) %></span>
+</td> 
+<% end %>

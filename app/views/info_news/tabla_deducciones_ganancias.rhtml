@@ -1,0 +1,24 @@
+<%#
+# Tablas de deducciones de ganancias
+%>
+
+<div> 
+  <Label class="text4">Tablas de deducciones permitidas para reducir  el impuesto a las ganancias Personas Fisicas</Label> 
+  
+  <div>
+        <Label class="texto_aviso">Ahora actualizado al 2009!!! </Label> 
+        <%= render :partial => "tabla_deduccion_ganancia",
+                :locals => { :hash_datos_tabla => @deducc_directas, 
+                :titulo_tabla=> "Deducciones Directas"}%>    
+
+   </div> 
+   <br>
+   <div>
+        <%= render :partial => "tabla_deduccion_ganancia",
+                :locals => { :hash_datos_tabla => @deducc_generales, 
+                :titulo_tabla=> "Deducciones Generales - Art. 81"}%>    
+    </div>
+</div>
+
+
+

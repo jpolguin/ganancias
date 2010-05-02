@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>http://informacionsueldos.com.ar/</loc>
+      <lastmod>2008-07-12</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>http://informacionsueldos.com.ar/salary</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://informacionsueldos.com.ar/salary/calculate_tax/48</loc>
+      <lastmod>2008-07-14</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.1</priority>
+   </url>
+   <url>
+      <loc>http://informacionsueldos.com.ar/info_news/links_ganancia/</loc>
+      <lastmod>2008-07-22</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.3</priority>
+   </url>
+   <url>
+      <loc>http://informacionsueldos.com.ar/info_news/tabla_deducciones_ganancias/</loc>
+      <lastmod>2008-07-22</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+      <url>
+      <loc>http://informacionsueldos.com.ar/info_news/busqueda_trabajo/</loc>
+      <lastmod>2008-08-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.3</priority>
+   </url>
+   <url>
+      <loc>http://informacionsueldos.com.ar/comparacion_sueldos/index/</loc>
+      <lastmod>2008-08-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.3</priority>
+   </url>
+
+   
+</urlset>

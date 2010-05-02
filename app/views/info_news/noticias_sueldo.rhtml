@@ -1,0 +1,13 @@
+<div> 
+  <p>
+  <Label class="text4">Información y  noticias sobre sueldos y salarios en general</Label> 
+  </p>
+   <%@noticias.each do |noticia|  -%>
+   <div>
+    <%= render :partial => "mostrar_noticia",
+                :locals => {:titulo_noticia=> noticia[:titulo], :descripcion => noticia[:descripcion],
+                :url_noticia => noticia[:url_noticia],:fecha=> noticia[:fecha]}%>    
+   </div>         
+   <% end %>
+</div>
+

@@ -1,0 +1,337 @@
+--- 
+revenue_parameter_details_000044: 
+  month: |
+    --- :agosto
+
+  id: "92"
+  value: "6000.00"
+  revenue_parameter_id: "8"
+revenue_parameter_details_000033: 
+  month: |
+    --- :septiembre
+
+  id: "81"
+  value: "4800.00"
+  revenue_parameter_id: "7"
+revenue_parameter_details_000022: 
+  month: |
+    --- :octubre
+
+  id: "70"
+  value: "0.07"
+  revenue_parameter_id: "9"
+revenue_parameter_details_000011: 
+  month: |
+    --- :noviembre
+
+  id: "59"
+  value: "0.06"
+  revenue_parameter_id: "6"
+revenue_parameter_details_000045: 
+  month: |
+    --- :septiembre
+
+  id: "93"
+  value: "6000.00"
+  revenue_parameter_id: "8"
+revenue_parameter_details_000034: 
+  month: |
+    --- :octubre
+
+  id: "82"
+  value: "4800.00"
+  revenue_parameter_id: "7"
+revenue_parameter_details_000023: 
+  month: |
+    --- :noviembre
+
+  id: "71"
+  value: "0.07"
+  revenue_parameter_id: "9"
+revenue_parameter_details_000012: 
+  month: |
+    --- :diciembre
+
+  id: "60"
+  value: "0.06"
+  revenue_parameter_id: "6"
+revenue_parameter_details_000001: 
+  month: |
+    --- :enero
+
+  id: "49"
+  value: "0.06"
+  revenue_parameter_id: "6"
+revenue_parameter_details_000046: 
+  month: |
+    --- :octubre
+
+  id: "94"
+  value: "6000.00"
+  revenue_parameter_id: "8"
+revenue_parameter_details_000035: 
+  month: |
+    --- :noviembre
+
+  id: "83"
+  value: "4800.00"
+  revenue_parameter_id: "7"
+revenue_parameter_details_000024: 
+  month: |
+    --- :diciembre
+
+  id: "72"
+  value: "0.07"
+  revenue_parameter_id: "9"
+revenue_parameter_details_000013: 
+  month: |
+    --- :enero
+
+  id: "61"
+  value: "0.07"
+  revenue_parameter_id: "9"
+revenue_parameter_details_000002: 
+  month: |
+    --- :febrero
+
+  id: "50"
+  value: "0.06"
+  revenue_parameter_id: "6"
+revenue_parameter_details_000047: 
+  month: |
+    --- :noviembre
+
+  id: "95"
+  value: "6000.00"
+  revenue_parameter_id: "8"
+revenue_parameter_details_000036: 
+  month: |
+    --- :diciembre
+
+  id: "84"
+  value: "4800.00"
+  revenue_parameter_id: "7"
+revenue_parameter_details_000025: 
+  month: |
+    --- :enero
+
+  id: "73"
+  value: "4800.00"
+  revenue_parameter_id: "7"
+revenue_parameter_details_000014: 
+  month: |
+    --- :febrero
+
+  id: "62"
+  value: "0.07"
+  revenue_parameter_id: "9"
+revenue_parameter_details_000003: 
+  month: |
+    --- :marzo
+
+  id: "51"
+  value: "0.06"
+  revenue_parameter_id: "6"
+revenue_parameter_details_000048: 
+  month: |
+    --- :diciembre
+
+  id: "96"
+  value: "6000.00"
+  revenue_parameter_id: "8"
+revenue_parameter_details_000037: 
+  month: |
+    --- :enero
+
+  id: "85"
+  value: "6000.00"
+  revenue_parameter_id: "8"
+revenue_parameter_details_000026: 
+  month: |
+    --- :febrero
+
+  id: "74"
+  value: "4800.00"
+  revenue_parameter_id: "7"
+revenue_parameter_details_000015: 
+  month: |
+    --- :marzo
+
+  id: "63"
+  value: "0.07"
+  revenue_parameter_id: "9"
+revenue_parameter_details_000004: 
+  month: |
+    --- :abril
+
+  id: "52"
+  value: "0.06"
+  revenue_parameter_id: "6"
+revenue_parameter_details_000038: 
+  month: |
+    --- :febrero
+
+  id: "86"
+  value: "6000.00"
+  revenue_parameter_id: "8"
+revenue_parameter_details_000027: 
+  month: |
+    --- :marzo
+
+  id: "75"
+  value: "4800.00"
+  revenue_parameter_id: "7"
+revenue_parameter_details_000016: 
+  month: |
+    --- :abril
+
+  id: "64"
+  value: "0.07"
+  revenue_parameter_id: "9"
+revenue_parameter_details_000005: 
+  month: |
+    --- :mayo
+
+  id: "53"
+  value: "0.06"
+  revenue_parameter_id: "6"
+revenue_parameter_details_000039: 
+  month: |
+    --- :marzo
+
+  id: "87"
+  value: "6000.00"
+  revenue_parameter_id: "8"
+revenue_parameter_details_000028: 
+  month: |
+    --- :abril
+
+  id: "76"
+  value: "4800.00"
+  revenue_parameter_id: "7"
+revenue_parameter_details_000017: 
+  month: |
+    --- :mayo
+
+  id: "65"
+  value: "0.07"
+  revenue_parameter_id: "9"
+revenue_parameter_details_000006: 
+  month: |
+    --- :junio
+
+  id: "54"
+  value: "0.06"
+  revenue_parameter_id: "6"
+revenue_parameter_details_000040: 
+  month: |
+    --- :abril
+
+  id: "88"
+  value: "6000.00"
+  revenue_parameter_id: "8"
+revenue_parameter_details_000029: 
+  month: |
+    --- :mayo
+
+  id: "77"
+  value: "4800.00"
+  revenue_parameter_id: "7"
+revenue_parameter_details_000018: 
+  month: |
+    --- :junio
+
+  id: "66"
+  value: "0.07"
+  revenue_parameter_id: "9"
+revenue_parameter_details_000007: 
+  month: |
+    --- :julio
+
+  id: "55"
+  value: "0.06"
+  revenue_parameter_id: "6"
+revenue_parameter_details_000041: 
+  month: |
+    --- :mayo
+
+  id: "89"
+  value: "6000.00"
+  revenue_parameter_id: "8"
+revenue_parameter_details_000030: 
+  month: |
+    --- :junio
+
+  id: "78"
+  value: "4800.00"
+  revenue_parameter_id: "7"
+revenue_parameter_details_000019: 
+  month: |
+    --- :julio
+
+  id: "67"
+  value: "0.07"
+  revenue_parameter_id: "9"
+revenue_parameter_details_000008: 
+  month: |
+    --- :agosto
+
+  id: "56"
+  value: "0.06"
+  revenue_parameter_id: "6"
+revenue_parameter_details_000042: 
+  month: |
+    --- :junio
+
+  id: "90"
+  value: "6000.00"
+  revenue_parameter_id: "8"
+revenue_parameter_details_000031: 
+  month: |
+    --- :julio
+
+  id: "79"
+  value: "4800.00"
+  revenue_parameter_id: "7"
+revenue_parameter_details_000020: 
+  month: |
+    --- :agosto
+
+  id: "68"
+  value: "0.07"
+  revenue_parameter_id: "9"
+revenue_parameter_details_000009: 
+  month: |
+    --- :septiembre
+
+  id: "57"
+  value: "0.06"
+  revenue_parameter_id: "6"
+revenue_parameter_details_000043: 
+  month: |
+    --- :julio
+
+  id: "91"
+  value: "6000.00"
+  revenue_parameter_id: "8"
+revenue_parameter_details_000032: 
+  month: |
+    --- :agosto
+
+  id: "80"
+  value: "4800.00"
+  revenue_parameter_id: "7"
+revenue_parameter_details_000021: 
+  month: |
+    --- :septiembre
+
+  id: "69"
+  value: "0.07"
+  revenue_parameter_id: "9"
+revenue_parameter_details_000010: 
+  month: |
+    --- :octubre
+
+  id: "58"
+  value: "0.06"
+  revenue_parameter_id: "6"

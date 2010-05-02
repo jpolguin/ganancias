@@ -1,0 +1,100 @@
+<div class="salary-form" >
+<%= error_messages_for 'salary' %>
+<fieldset>
+<legend>Ingrese su sueldo bruto (no el neto), tickets y bonos o premios <%=link_to "(Ayuda)", { :controller => "salary",:action => "ayuda_cargar_sueldo",:id => "" }, { :class => 'd'}%></legend>
+<% form_for :salary, :url => { :action => :save_salary } do |form| %>
+ <div>
+<table>
+  <tr><td >
+    <label for="position_type" >Cargo/Posicion</label></td>
+   <td> <%=
+    form.select :position_id,
+    @positions.map{|u| [u.name,u.id]},
+    :prompt => "Seleccionar un cargo"
+    %>
+  </td></tr>   
+  <tr><td>
+  <label>Copiar a Derecha?</label>
+  </td>
+  <td>
+   <%= check_box_tag  :copiar_a_derecha, @copiar_a_derecha, @copiar_a_derecha %>  
+  </td></tr>   
+</table>
+<div class="entry" >
+<table>
+  <tr class="fila_p" > 
+    <td></td>
+     <% for mes in Salary::MONTHS_FOR_HUMANS -%>
+       <td class="columna_numero_chico" align="center">
+         <H3 ALIGN="CENTER"><%= mes %></h3>   
+     </td>
+        <% end %>
+   </tr>
+   
+   <tr class="fila_i">
+      <td >
+       <span class="titulo_fila">Salario Bruto</span>
+      </td> 
+     <% @salary.monthly_salaries.each_with_index do |salario_mes, index|   %>
+       <% fields_for "salario_mes[#{index}]", salario_mes do |f| %>
+       <td class="columna_numero_chico">
+         <%= f.text_field :gross_salary, :id=> "salario_mes[#{index}]_gross_salary", :size => 5  %>
+         <%= observe_field("salario_mes[#{index}]_gross_salary",:frequency => 1,  :function => "copiar_a_derecha(element, value)") %>
+       </td>
+      
+       <% end %>  
+     <% end %>
+   </tr> 
+   
+   <tr class="fila_p">
+      <td >
+       <span class="titulo_fila">Tickets y Viaticos</span>
+      </td> 
+     <% @salary.monthly_salaries.each_with_index do |salario_mes, index|   %>
+       <% fields_for "salario_mes[#{index}]", salario_mes do |f| %>
+       <td class="columna_numero_chico">
+         <%= f.text_field :ticket, :id=> "salario_mes[#{index}]_ticket",:size => 5 %>
+         <%= observe_field("salario_mes[#{index}]_ticket",:frequency => 1, :function => "copiar_a_derecha(element, value)") %>
+     </td>
+      <% end %>  
+     <% end %>
+   </tr> 
+
+   <tr class="fila_i">
+      <td >
+       <span class="titulo_fila">Bonos o premios</span>
+      </td> 
+     <% @salary.monthly_salaries.each_with_index do |salario_mes, index|  %>
+       <% fields_for "salario_mes[#{index}]", salario_mes do |f| %>
+       <td class="columna_numero_chico">
+         <%= f.text_field :bonus , :size => 5 %>
+     </td>
+      <% end %>  
+     <% end %>
+   </tr>  
+   
+</table>  
+</div>
+<br>
+<div>
+<legend>Ingrese Deducciones Directas: Esposa, hijos y otras cargas (Padres, abuelos, etc.)</legend>
+<table>
+  <tr>
+   <td><label for="deduce_conyuge" >Deduce a su conyuge?</label></td>
+   <td><%= form.check_box :deduce_conyuge%></td>
+  </tr>   
+  <tr>
+    <td><label for="cantidad_hijos" >Cantidad de hijos:</label></td>
+    <td><%= form.text_field :cantidad_hijos, :size => 2 %></td>
+  </tr>
+  <tr>
+    <td><label for="otras_cargas" >Otras personas a cargo:</label></td>
+    <td><%= form.text_field :otras_cargas, :size => 2 %></td>
+  </tr>   
+</table>
+  <%= submit_tag "Calcular Ganancias >>" , :class => "submit"%>
+  </div>
+</div>
+  <% end %>
+</fieldset>
+</div>

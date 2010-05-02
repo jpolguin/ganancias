@@ -1,0 +1,2 @@
+module SueldosHelper
+end

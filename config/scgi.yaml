@@ -1,0 +1,9 @@
+--- 
+:disable_signals: true
+---:password: LhbDE8ByUbhsE
+:host: 127.0.0.1
+:port: 9999
+:logfile: log/scgi.log
+:control_url: druby://127.0.0.1:8999
+:env: production
+:config: config/scgi.yaml
