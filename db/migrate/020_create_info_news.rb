@@ -2,8 +2,8 @@ class CreateInfoNews < ActiveRecord::Migration
   def self.up
     create_table :info_news do |t|
       t.column :titulo, :string
-      t.column :descripcion, :string
-      t.column :url_noticia, :string
+      t.column :descripcion, :text
+      t.column :url_noticia, :text
       t.column :categoria, :string
       t.column :fecha, :date
       t.column :mostrar, :boolean
