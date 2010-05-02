@@ -11,6 +11,7 @@ class CreateInfoNews < ActiveRecord::Migration
     add_index :info_news, :fecha 
   end
 
+
   def self.down
     drop_table :info_news
   end
