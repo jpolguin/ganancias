@@ -2,17 +2,17 @@
 <%= error_messages_for 'salary' %>
 <fieldset>
 <legend>Ingrese su sueldo bruto (no el neto), tickets y bonos o premios <%=link_to "(Ayuda)", { :controller => "salary",:action => "ayuda_cargar_sueldo",:id => "" }, { :class => 'd'}%></legend>
-<% form_for :salary, :url => { :action => :save_salary } do |form| %>
+<%form_for :salary, :url => { :action => :save_salary } do |form| %>
  <div>
 <table>
-  <tr><td >
-    <label for="position_type" >Cargo/Posicion</label></td>
-   <td> <%=
-    form.select :position_id,
-    @positions.map{|u| [u.name,u.id]},
-    :prompt => "Seleccionar un cargo"
-    %>
-  </td></tr>   
+  <tr>
+    <td width="10%"><label for="cargo" >Cargo/Posicion:</label></td>
+    <td width="20%"><%= text_field_with_auto_complete :salary, :cargo, {}, {:method => :get} %></td> 
+    <td width="10%"><label for="rubro_empresa" >Rubro Empresa:</label></td>
+    <td width="30%"><%= text_field_with_auto_complete :salary, :rubro_empresa, {}, {:method => :get} %></td>    
+    <td width="20%"><label for="experiencia" >Experiencia en años:</label></td>
+    <td width="10%"><%= select( "salary", "experiencia", {"no especificada" => "0", "menos de 2 años" => "1", "2-5 años" => "2", "más de 5 años" => "3"}) %> </td>
+  </tr>   
   <tr><td>
   <label>Copiar a Derecha?</label>
   </td>

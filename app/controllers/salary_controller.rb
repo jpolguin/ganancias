@@ -1,10 +1,12 @@
+require "date"
 class SalaryController < ApplicationController
-
+ auto_complete_for :salary, :cargo
+ auto_complete_for :salary, :rubro_empresa
   def index
     clear_salary_y_positions
     @salary = find_salary
-    @salary.set_monthly_salary_for_all_months(3000, 200.0, 0.0)
-    
+    @salary.set_monthly_salary_for_all_months(6000, 0.0, 0.0)
+    @salary.experiencia = 0
     @copiar_a_derecha = true
     @mostrar_calcular_deducciones = false
     
@@ -21,6 +23,7 @@ class SalaryController < ApplicationController
                                              
       salariosMensuales << salario_mensual_completo
     end
+    @salary.fecha_calculo = DateTime.now()
     @salary.monthly_salaries = salariosMensuales
     @salary.anio_fiscal = 2008
     if (@salary.save) 

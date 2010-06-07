@@ -1,4 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
+  
+  map.resources :salaries, :collection => {:auto_complete_for_salary_cargo => :get }
+  map.resources :salaries, :collection => {:auto_complete_for_salary_rubro_empresa => :get }
   # The priority is based upon order of creation: first created -> highest priority.
   
   # Sample of regular route:

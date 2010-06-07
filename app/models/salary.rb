@@ -11,7 +11,7 @@ class Salary < ActiveRecord::Base
   has_many :special_discounts  
   
   belongs_to :position
-  validates_presence_of :position_id 
+  validates_presence_of :cargo, :rubro_empresa 
   validates_numericality_of  :cantidad_hijos, :otras_cargas , :anio_fiscal
    
   attr_accessor :aplicar_descuentos_especiales

@@ -10,5 +10,6 @@ class AddColumnsDeduccionesDirectas < ActiveRecord::Migration
     remove_column :salaries, :cantidad_hijos
     remove_column :salaries, :deduce_conyuge
     remove_column :salaries, :otras_cargas
+    add_column :salaries, :position_id, :integer, :null => false
   end
 end
