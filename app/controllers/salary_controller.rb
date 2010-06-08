@@ -103,6 +103,19 @@ class SalaryController < ApplicationController
     @mostrar_calcular_deducciones = true
   end
   
+  def actualiza_cargo_rubro
+   
+  end
+  
+  def actualizar_cargo_rubro
+     parametros = params[:salary]
+     
+     Salary.update_all ["cargo=?",parametros[:cargo_cambiado] ], ["cargo=? ",parametros[:cargo]]  
+     Salary.update_all ["rubro_empresa=?",parametros[:rubro_cambiado]], ["rubro_empresa=? ",parametros[:rubro_empresa]]  
+    
+    
+     redirect_to :action=> :actualiza_cargo_rubro, :method => :get
+  end
   private
   
   def find_salary

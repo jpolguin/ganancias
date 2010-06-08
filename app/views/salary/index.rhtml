@@ -1,17 +1,18 @@
 <div class="salary-form" >
 <%= error_messages_for 'salary' %>
 <fieldset>
-<legend>Ingrese su sueldo bruto (no el neto), tickets y bonos o premios <%=link_to "(Ayuda)", { :controller => "salary",:action => "ayuda_cargar_sueldo",:id => "" }, { :class => 'd'}%></legend>
+<legend>Ingrese su sueldo bruto, Viaticos y bonos o premios <%=link_to "(Ayuda)", { :controller => "salary",:action => "ayuda_cargar_sueldo",:id => "" }, { :class => 'd'}%></legend>
 <%form_for :salary, :url => { :action => :save_salary } do |form| %>
  <div>
+  <div>Por favor, ingrese Cargo, Rubro y experiencia Correctos para poder luego compartir estadisticas de sueldos para todos!  </div
 <table>
   <tr>
     <td width="10%"><label for="cargo" >Cargo/Posicion:</label></td>
     <td width="20%"><%= text_field_with_auto_complete :salary, :cargo, {}, {:method => :get} %></td> 
     <td width="10%"><label for="rubro_empresa" >Rubro Empresa:</label></td>
     <td width="30%"><%= text_field_with_auto_complete :salary, :rubro_empresa, {}, {:method => :get} %></td>    
-    <td width="20%"><label for="experiencia" >Experiencia en años:</label></td>
-    <td width="10%"><%= select( "salary", "experiencia", {"no especificada" => "0", "menos de 2 años" => "1", "2-5 años" => "2", "más de 5 años" => "3"}) %> </td>
+    <td width="18%"><label for="experiencia" >Exp. en años:</label></td>
+    <td width="8%"><%= select( "salary", "experiencia", {"no especificada" => "0", "menos de 2 años" => "1", "2-5 años" => "2", "más de 5 años" => "3"}) %> </td>
   </tr>   
   <tr><td>
   <label>Copiar a Derecha?</label>
@@ -90,9 +91,10 @@
   <tr>
     <td><label for="otras_cargas" >Otras personas a cargo:</label></td>
     <td><%= form.text_field :otras_cargas, :size => 2 %></td>
+    <td>  <%= submit_tag "Calcular Ganancias >>" , :class => "submit"%></td>
   </tr>   
 </table>
-  <%= submit_tag "Calcular Ganancias >>" , :class => "submit"%>
+ 
   </div>
 </div>
   <% end %>

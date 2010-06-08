@@ -1,0 +1,33 @@
+<%form_for :salary, :url => { :action => :actualizar_cargo_rubro } do |form| %>
+ <div>
+<table>
+  <tr>
+    <td width="20%"><label for="cargo_buscado" >Cargo/Posicion:</label></td>
+    <td width="30%"><%= text_field_with_auto_complete :salary, :cargo, {}, {:method => :get} %></td> 
+    <td width="20%"><label for="cargo_cambiado" >Cargo a cambiar</label></td>
+    <td width="30%"><%= form.text_field "cargo_cambiado"  %> </td>
+
+  </tr>
+  <tr>
+    <td width="20%"><label for="rubro_buscado" >Rubro Empresa:</label></td>
+    <td width="30%"><%= text_field_with_auto_complete :salary, :rubro_empresa, {}, {:method => :get} %></td>    
+    <td width="20%"><label for="rubro_cambiado" >Rubro a cambiar</label></td>
+    <td width="30%"><%= form.text_field "rubro_cambiado"  %> </td>
+  </tr>   
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ <%= submit_tag "Actualizar>>" , :class => "submit"%>
+</div>
+<% end %>
+
+

@@ -19,6 +19,7 @@ ActionController::Routing::Routes.draw do |map|
   # Allow downloading Web Service WSDL as a file with an extension
   # instead of a file named 'wsdl'
   map.connect 'impuesto_ganancia/' , :controller => "salary" ,:action => "index"
+  map.connect 'cambiacambia/' , :controller => "salary" ,:action => "actualiza_cargo_rubro"
   
   map.connect ':controller/service.wsdl', :action => 'wsdl'
 
