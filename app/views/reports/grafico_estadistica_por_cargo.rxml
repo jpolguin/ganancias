@@ -1,0 +1,49 @@
+xml.chart do
+
+#  xml.legend_label("","layout"=>"vertical","size"=>12) 
+#  xml.legend_rect("","x"=>12,"width"=>500) 
+#  xml.chart_value("color" =>"ffffff", "alpha" => "85", "font" => "arial",  "bold"=> "true",  "size"=>"10",  "position"=>"middle", "prefix" =>"",  "suffix"=>"", "decimals"=>"0", "separator"=>"", "as_percentage"=>"false" )
+#  xml.axis_category("font" =>'Arial',"bold"=>true,"size"=>14)
+#  xml.axis_value("font" =>'Arial',"bold"=>true,"size"=>14)
+
+xml.axis_category("shadow"=>'low', "size"=>'12', "color"=>'blue', "alpha"=>'100', "orientation"=>'horizontal_up')
+xml.axis_ticks("value_ticks"=>'false', "category_ticks"=>'true', "major_thickness"=>'2', "minor_thickness"=>'1', "minor_count"=>'1', "major_color"=>'222222', "minor_color"=>'222222', "position"=>'centered' )
+xml.axis_value("min"=>5000.0,"max" => 15000.0,  "alpha"=>0,"font" =>'Arial',"bold"=>'true',"size"=>6)
+
+xml.chart_border("color"=>'000000', "top_thickness"=>'0', "bottom_thickness"=>'0', "left_thickness"=>'4', "right_thickness"=>'0')
+
+
+
+  
+
+  #xml.chart_rect("","x"=>90,"y"=>100,"height"=>1500,"width"=>650)
+  
+  xml.chart_data do
+    xml.row do    
+      #xml.null()      
+      for @registro in @ganancia_bruta_por_cargo
+        xml.string(@registro[:cargo])
+      end
+    end
+    xml.string("Sueldo Bruto")
+    xml.row do     
+     for @registro in @ganancia_bruta_por_cargo
+        xml.number(@registro[:sueldo])
+      end
+    end
+  end
+  xml.chart_grid_h("alpha"=>'5', "color"=>'000000', "thickness"=>'30')
+  xml.chart_grid_v("alpha"=>'20', "color"=>'000000', "thickness"=>'1')
+
+  xml.chart_label("shadow"=>'low', "color"=>'ffffff', "alpha"=>'75', "size"=>'6', "position"=>'center',"suffix"=>'', "prefix"=>'', "decimals"=>'1', "separator"=>'', "as_percentage"=>'false'  )
+  xml.chart_rect("shadow"=>'high', "x"=>'290', "y"=>'105', "width"=>'540', "height"=>'860', "positive_color"=>'dba34c', "negative_color"=>'ff0000', "positive_alpha"=>'65', "negative_alpha"=>'0', "corner_tl"=>'0', "corner_tr"=>'30', "corner_br"=>'30', "corner_bl"=>'0')
+  xml.chart_type("bar")
+
+  xml.legend("layout"=>'hide')
+# <series_color>
+#		<color>5a4b6e</color>
+#</series_color>
+
+  
+  
+end   

@@ -7,13 +7,13 @@ class ComparacionSueldo < ActiveRecord::Base
   
   
   def salario_actual
-    salario_actual = Salary.new(:position_id => 1, :cantidad_hijos=> cantidad_hijos, :otras_cargas => otras_cargas, :deduce_conyuge => deduce_conyuge)     
+    salario_actual = Salary.new( :cantidad_hijos=> cantidad_hijos, :otras_cargas => otras_cargas, :deduce_conyuge => deduce_conyuge, :cargo =>"noaplica",:rubro_empresa=>"noaplica" )     
     salario_actual.set_monthly_salary_for_all_months(salario_bruto_actual, ticket_actual, bonus_actual/12.0)  
     salario_actual
   end
   
   def salario_futuro
-  salario_futuro =  Salary.new(:position_id => 1, :cantidad_hijos=> cantidad_hijos, :otras_cargas => otras_cargas, :deduce_conyuge => deduce_conyuge)     
+  salario_futuro =  Salary.new( :cantidad_hijos=> cantidad_hijos, :otras_cargas => otras_cargas, :deduce_conyuge => deduce_conyuge, :cargo =>"noaplica",:rubro_empresa=>"noaplica" )     
   salario_futuro.set_monthly_salary_for_all_months(salario_bruto_futuro, ticket_futuro, bonus_futuro/12.0)
   salario_futuro
   end

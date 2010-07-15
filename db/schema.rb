@@ -1,5 +1,5 @@
 # This file is auto-generated from the current state of the database. Instead of editing this file, 
-# please use the migrations feature of ActiveRecord to incrementally modify your database, and
+# please use the migrations feature of Active Record to incrementally modify your database, and
 # then regenerate this schema definition.
 #
 # Note that this schema.rb definition is the authoritative source for your database schema. If you need
@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 31) do
+ActiveRecord::Schema.define(:version => 32) do
 
   create_table "comparacion_sueldos", :force => true do |t|
     t.decimal "salario_bruto_actual", :precision => 10, :scale => 2, :default => 0.0
@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(:version => 31) do
 
   create_table "info_news", :force => true do |t|
     t.string  "titulo"
-    t.string  "descripcion"
-    t.string  "url_noticia"
+    t.text    "descripcion"
+    t.text    "url_noticia"
     t.string  "categoria"
     t.date    "fecha"
     t.boolean "mostrar"
@@ -86,6 +86,10 @@ ActiveRecord::Schema.define(:version => 31) do
     t.date    "fecha_calculo"
   end
 
+  create_table "schema_info", :id => false, :force => true do |t|
+    t.integer "version"
+  end
+
   create_table "sessions", :force => true do |t|
     t.string   "session_id"
     t.text     "data"
@@ -105,7 +109,7 @@ ActiveRecord::Schema.define(:version => 31) do
     t.decimal "intereses_hipotecarios",   :precision => 10, :scale => 2, :default => 0.0
     t.decimal "personal_domestico",       :precision => 10, :scale => 2, :default => 0.0
     t.decimal "aportes_voluntarios_afjp", :precision => 10, :scale => 2, :default => 0.0
-    t.integer "salary_id",                                                                :null => false
+    t.integer "salary_id"
   end
 
 end
