@@ -11,7 +11,7 @@
       );    
 
      jQuery.validator.addMethod("letrasblancos", function(value, element) {
-	return this.optional(element) || /^[a-z][a-z-.+#\s\/\(\)]*$/i.test(value);
+	return this.optional(element) || /^[a-z][a-z-.+#\s\/\(\)ñÑ]*$/i.test(value);
     }, "Letras, puntos y blancos");  
 
       jQuery.validator.addMethod("sinAcentos", function(value, element) {
