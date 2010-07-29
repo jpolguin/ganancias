@@ -1,16 +1,71 @@
+<script type="text/javascript">
+   jQuery.noConflict();
+   jQuery( function(){
+      jQuery.validator.addMethod("No4Consonantes", function(value, element) {
+		return this.optional(element) || !(/[^aeiouAEIOUyY\s][^aeiouAEIOUyY\s][^aeiouAEIOUyY\s][^aeiouAEIOUyY\s]/.test(value));
+	}, "No debe tener 4 consonantes consecutivas"
+      );    
+      jQuery.validator.addMethod("No3Vocales", function(value, element) {
+		return this.optional(element) || !(/[aeiouAEIOU][aeiouAEIOU][aeiouAEIOU]/.test(value));
+	}, "No debe tener 3 vocales consecutivas"
+      );    
+
+     jQuery.validator.addMethod("letrasblancos", function(value, element) {
+	return this.optional(element) || /^[a-z][a-z-.+#\s\/\(\)]*$/i.test(value);
+    }, "Letras, puntos y blancos");  
+
+      jQuery.validator.addMethod("sinAcentos", function(value, element) {
+		return this.optional(element) || !(/[áéíóúÁÉÍÓÚ]/.test(value));
+	}, "Lo siento pero no se aceptan acentos."
+      );    
+
+            
+        jQuery("#form_sueldo_mensual").validate( {
+      messages: {
+        'salary[cargo]': {
+          required: "El Cargo es obligatorio. Si no quiere ingresarlo especifique: ninguno",
+          minlength: "No es un cargo correcto. Si no quiere ingresarlo especifique: ninguno",
+          letrasblancos: "No es un cargo correcto. Si no quiere ingresarlo especifique: ninguno",
+          No4Consonantes: "No es un cargo correcto. Si no quiere ingresarlo especifique: ninguno",
+          No3Vocales: "No es un cargo correcto. Si no quiere ingresarlo especifique: ninguno"
+        },
+        'salary[rubro_empresa]': {
+            required: "El Rubro es obligatorio. Si no quiere ingresarlo especifique: ninguno",
+            minlength: "No es un Rubro correcto. Si no quiere ingresarlo especifique: ninguno",
+           letrasblancos: "No es un Rubro correcto. Si no quiere ingresarlo especifique: ninguno",
+           No4Consonantes: "No es un Rubro correcto. Si no quiere ingresarlo especifique: ninguno",
+           No3Vocales: "No es un Rubro correcto. Si no quiere ingresarlo especifique: ninguno"
+        }
+      } ,
+        showErrors: function(ErrorMap, errorList) {
+             jQuery('#errorval').show();
+             this.defaultShowErrors();
+            },
+        errorElement: "em",  
+        errorContainer: jQuery('#errorval'),
+        errorLabelContainer: "#errorval ul", 
+        wrapper: "li" 
+        });
+      });
+
+    
+</script>
+
 <div class="salary-form" >
 <%= error_messages_for 'salary' %>
-<fieldset>
+<div id="errorval"  style="display:none" ><ul></ul></div>
+<%form_for :salary, :url => { :action => :save_salary }, :html => { :id => "form_sueldo_mensual" } do |form| %>
+  <fieldset>
 <legend>Ingrese su sueldo bruto, Viaticos y bonos o premios <%=link_to "(Ayuda)", { :controller => "salary",:action => "ayuda_cargar_sueldo",:id => "" }, { :class => 'd'}%></legend>
-<%form_for :salary, :url => { :action => :save_salary } do |form| %>
+
  <div>
-  <div>Por favor, ingrese Cargo, Rubro y experiencia Correctos para poder luego compartir estadisticas de sueldos para todos!  </div
+   <div>Por favor, ingrese Cargo, Rubro y experiencia Correctos para poder luego compartir estadisticas de sueldos para todos!  </div>
 <table>
   <tr>
     <td width="10%"><label for="cargo" >Cargo/Posicion:</label></td>
-    <td width="20%"><%= text_field_with_auto_complete :salary, :cargo, {}, {:method => :get} %></td> 
+    <td width="20%"><%= text_field_with_auto_complete :salary, :cargo, {:minlength=>4,:class=>" sinAcentos required letrasblancos No4Consonantes No3Vocales"}, {:method => :get,:limit => 20} %></td> 
     <td width="10%"><label for="rubro_empresa" >Rubro Empresa:</label></td>
-    <td width="30%"><%= text_field_with_auto_complete :salary, :rubro_empresa, {}, {:method => :get} %></td>    
+    <td width="30%"><%= text_field_with_auto_complete :salary, :rubro_empresa, {:minlength=>4, :class=>" sinAcentos required letrasblancos No4Consonantes No3Vocales"}, {:method => :get} %></td>    
     <td width="18%"><label for="experiencia" >Exp. en años:</label></td>
     <td width="8%"><%= select( "salary", "experiencia", {"no especificada" => "0", "menos de 2 años" => "1", "2-5 años" => "2", "más de 5 años" => "3"}) %> </td>
   </tr>   
@@ -96,7 +151,9 @@
 </table>
  
   </div>
+
 </div>
-  <% end %>
 </fieldset>
+  <% end %>
+
 </div>
