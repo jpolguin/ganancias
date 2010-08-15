@@ -123,9 +123,6 @@ a.d:visited {
 }
 
 
-
-
-
 #banner img {
 float: left;
 }
@@ -229,6 +226,21 @@ background-color: #9c9; color: black;
 #ganancia .entry .fila_i {
 background-color: #bfb; color: black;
 }
+
+#estadistica .entry .fila_g {
+background-color: light gray ; color: black ;
+}
+
+#estadistica .entry .fila_r {
+background-color: #9c9; color: black;
+}
+
+#estadistica .entry .titulo1 {
+font-size: 120%;
+font-family: sans-serif;    
+
+}
+
 
 #ganancia .title {
 font-size: 120%;
@@ -411,6 +423,10 @@ font-size: 12px;
 list-style: square;
 
 }
+
+
+
+
 
 
 

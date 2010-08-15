@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 32) do
+ActiveRecord::Schema.define(:version => 34) do
 
   create_table "comparacion_sueldos", :force => true do |t|
     t.decimal "salario_bruto_actual", :precision => 10, :scale => 2, :default => 0.0
@@ -21,6 +21,20 @@ ActiveRecord::Schema.define(:version => 32) do
     t.integer "cantidad_hijos",                                      :default => 0
     t.integer "otras_cargas",                                        :default => 0
     t.boolean "deduce_conyuge",                                      :default => false
+  end
+
+  create_table "estadistica_por_cargo_mes", :force => true do |t|
+    t.string  "cargo"
+    t.decimal "salario_promedio", :precision => 10, :scale => 2, :default => 0.0
+    t.string  "mes"
+    t.string  "anio"
+  end
+
+  create_table "estadistica_por_rubro_mes", :force => true do |t|
+    t.string  "rubro_empresa"
+    t.decimal "salario_promedio", :precision => 10, :scale => 2, :default => 0.0
+    t.string  "mes"
+    t.string  "anio"
   end
 
   create_table "info_news", :force => true do |t|

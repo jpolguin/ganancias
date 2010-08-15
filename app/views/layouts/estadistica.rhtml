@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html>
+<head>
+<title>Calculo de Ganancias</title>
+  <META name="author" content="J. P. O. 22046Lem031">
+  <META name="copyright" content="&copy; 2008 CiberiadsSoft">
+  <META name="description" content="estadistica sueldos y calculo de ganancias en argentina" /> 
+  <META name="keywords" content="estadistica de sueldos, impuesto a las ganancias,4ta categoria, sueldos, calculo de ganancia, ganancias, calculo de ganancias cuarta categoria, monotributo, calculo,afip,572,549,formulario,busqueda,trabajo,laboral,relacion de dependencia,argentina,f572,f549,empleado, descuentos al sueldo, descuentos al salario, salario, gratificacion, aguinaldo, sueldos promedio, aumentos de sueldos, salario promedio">
+  <META http-equiv="Content-Language" content="es-ar" /> 
+  <META name="date" content="2010-08-01T08:49:37+00:00">
+
+<%= stylesheet_link_tag "ganancias" , :media => "all" %>
+<%= javascript_include_tag   'prototype.js', 'effects.js', 'dragdrop.js', 'controls.js', 'application.js', 'jquery-1.4.2.js', 'jquery.validate.js', 'additional-methods.js' %>
+</head>
+
+<body id="ganancia" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
+<div id="banner" >
+<!--<img src="/images/pdick.gif" />-->
+<script type="text/javascript">
+  jQuery.noConflict();
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16233440-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<%= @page_title || "Estadistica de Sueldos" %>
+<label class="beta">Versión beta</label>
+<div>
+ <script type="text/javascript"><!--
+google_ad_client = "pub-9491596643460689";
+/* horizontal728x15de4anuncios */
+google_ad_slot = "7772276574";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+</div>
+<div id="columns" >
+ <div id="menuside">
+ <table border="0" width="90%">
+ <tr>
+    <%#*<td width="100%" ><b><%=link_to "Nuevo Calculo", { :controller => "salary",:action => "index",:id => "" }, { :class => 'menulink'}</b></td>%>
+    <td width="100%" ><b><%=link_to "Estadistica home", url_for(:controller => "estadistica"), { :class => 'menulink'}%></b></td>
+ </tr>
+ <tr>
+ <td width="100%" ><b> <%=link_to "Estadistica por Rubro", { :controller => "estadistica",:action => "estadistica_por_rubro", :id => "" }, { :class => 'menulink'}%></b></td>    
+ </tr>
+ <tr>
+ <td width="100%" ><b> <%=link_to "Estadistica por Cargo", { :controller => "estadistica",:action => "estadistica_por_cargo", :id => "" }, { :class => 'menulink'}%></b></td>    
+ </tr>
+<tr>  
+ <td width="100%" ><b><%=link_to "Volver", "javascript:history.back()" , { :class => 'menulink'}%></b></td>
+ </tr>
+ <tr>
+ <td width="100%" ><b><%=link_to "Ir a Inicio", { :controller => "sueldos",:action => "index",:id => "" }, { :class => 'menulink'}%></b></td>
+ </tr>
+
+</table>
+  </div>
+<div id="main" >
+  <% if flash[:notice] -%>
+    <div id="notice" ><%= flash[:notice] %></div>
+  <% end -%>
+  <%= yield :layout %>
+</div>
+</div>
+<div id="pieads">
+<script type="text/javascript"><!--
+google_ad_client = "pub-9491596643460689";
+/* Horizontal728x90, para pie, creado 21/07/08 */
+google_ad_slot = "2815140491";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+</body>
+</html>

@@ -439,6 +439,33 @@ border: 0;
 
 }
 
+#main a.linknormal:link {
+display: block;
+width: 210px;
+text-align: left;
+text-decoration: underlined;
+font-family: tahoma;
+font-size:14px;
+color: #000000;
+background-color:#eee;
+border: none;
+}
+
+#main a.linknormal:hover {
+border: none;
+background-color:#eee;
+}
+
+#main a.linknormal:visited {
+	font-family: tahoma;
+	font-size: 14px;
+	font-weight: normal;
+	color: #117148;
+	text-decoration: none;
+}
+
+
+
 a.menulink {
 display: block;
 width: 210px;
