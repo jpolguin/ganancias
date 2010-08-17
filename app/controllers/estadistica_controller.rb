@@ -16,5 +16,10 @@ class EstadisticaController < ApplicationController
     
   end
   
-  
+  def estadistica_promedio_anual
+     @estadisticas_promedio = []
+     #anio 2010
+     @estadisticas_promedio = [{:mes => "enero",:salario_promedio=>6990.30,:anio=>"2010"},{:mes => "febrero",:salario_promedio=>7030.30,:anio=>"2010"},{:mes => "marzo",:salario_promedio=>7325.67,:anio=>"2010"},{:mes => "abril",:salario_promedio=>7289.43,:anio=>"2010"},{:mes => "mayo",:salario_promedio=>7794.96,:anio=>"2010"},{:mes => "junio",:salario_promedio=>7989.30,:anio=>"2010"},{:mes => "julio",:salario_promedio=>7895.71,:anio=>"2010"},{:mes => "agosto",:salario_promedio=>8663,:anio=>"2010"} ]
+  end
+   
 end

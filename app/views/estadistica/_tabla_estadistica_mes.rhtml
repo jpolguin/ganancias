@@ -1,8 +1,10 @@
-    <table border=2 width="100%">
-      <caption class="titulo1"><%= titulo_tabla%> </caption>
+<p>
+    <table class="tablastat" border=2 width="100%">    
+    <caption><%= titulo_tabla%></caption>  
       <tr class="<%= cycle('fila_r', 'fila_g')%>"><TH><%=titulo_variable%></TH>	<TH>Salario Promedio</TH>  <TH>Mes</TH> <TH>Año</TH>  </tr>
       <% hash_datos_tabla.each do |fila_tabla|  -%>
       <tr class="<%= cycle('fila_g', 'fila_r')%>"><TD><%=fila_tabla[variable]%> </TD>	<TD><%=fila_tabla[:salario_promedio]%></TD> <TD><%=fila_tabla[:mes]%></TD> <TD><%=fila_tabla[:anio]%></TD></tr>
       <% end %>
 
     </table>
+</p>    

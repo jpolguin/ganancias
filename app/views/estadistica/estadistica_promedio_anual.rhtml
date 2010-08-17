@@ -1,0 +1,32 @@
+<script type="text/javascript">  
+    
+     jQuery(document).ready(function(){
+     
+            jQuery('#stat_anual').visualize({type: 'bar', width: '600px', colors:['#be1e2d','#666699','#92d5ea','#ee8310','#8d10ee','#5a3b16','#26a4ed','#f45a90','#e9e744','#e9e790','#f55a91','#22ff10','#5aeb20','#fd607e','#6677f1','#1255bb','#aa1e2d','#d1e2dd']}).appendTo('#grafico_anual').trigger('visualizeRefresh');
+            jQuery('#grafico_anual').hide()
+            jQuery('#stat_anual').trigger('visualizeRefresh');
+            jQuery('#grafico_anual').trigger('visualizeRefresh');
+            jQuery('#grafico_anual').show()
+            jQuery('body').trigger('visualizeRefresh');
+   
+      } 
+     ); 
+
+
+</script>
+  
+
+
+<div id="estadistica"> 
+  <p>
+    <div class="mainh1"><p>Estadística Salario Promedio mensual ingresado al calculo de ganancias</p></div>  
+  </p>
+   <div class="entry">
+        <%= render :partial => "tabla_estadistica_anual",
+                :locals => { :hash_datos_tabla => @estadisticas_promedio, 
+                :titulo_tabla=> "Salario bruto promedio mensual", :titulo_variable => "Salario Promedio"}%>    
+    </div>   
+  <div id="grafico_anual">
+  </div>
+</div>
+

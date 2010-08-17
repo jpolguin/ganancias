@@ -1,12 +1,11 @@
 <div id="estadistica"> 
   <p>
-    <h1>Estadística por Rubro empresa </h1>
-  
+    <div class="mainh1"> Estadística por Rubro empresa </div>  
   </p>
    <div class="entry">
         <%= render :partial => "tabla_estadistica_mes",
                 :locals => { :hash_datos_tabla => @estadisticas_rubro, 
-                :titulo_tabla=> "Estadística de salario promedio mensual bruto por Rubro", :titulo_variable => "Rubro Empresa",:variable => :rubro_empresa}%>    
+                :titulo_tabla=> "Salario promedio mensual bruto por Rubro", :titulo_variable => "Rubro Empresa",:variable => :rubro_empresa}%>    
     </div>
    <Label class="text4">Se muestran los 20 primeros rubros por cantidad de muestras con minimo de 100 muestras por rubro. </label> 
 </div>

@@ -126,10 +126,12 @@ a.d:visited {
 #banner img {
 float: left;
 }
+
 #columns {
 float: left;    
 background:  #eeeeee ;
 }
+
 #main {
 margin-left: 5em;
 padding-top: 0.5em;
@@ -137,6 +139,13 @@ padding-left: 1em;
 background: #eeeeee;
 }
 
+#mainstat {
+margin-left: 10em;
+padding-top: 0.5em;
+padding-left: 1em;
+background: #eeeeee;
+width:88%;
+}
 
 
 .slidedoormenu{
@@ -236,11 +245,23 @@ background-color: #9c9; color: black;
 }
 
 #estadistica .entry .titulo1 {
-font-size: 120%;
+font-size: 160%;
 font-family: sans-serif;    
 
 }
 
+ .titulo1 {
+font-size: 120%;
+font-family: sans-serif;    
+}
+
+
+.text4 {
+	font-family: tahoma;
+	font-size: 14px;
+	font-weight: bold;
+	color: BF302C;
+}
 
 #ganancia .title {
 font-size: 120%;
@@ -425,11 +446,6 @@ list-style: square;
 }
 
 
-
-
-
-
-
 a.menulink {
 display: block;
 width: 80px;
@@ -476,6 +492,13 @@ width:3em;
 background: #eeeeee;
 }
 
+#menuside table {
+height:35px;
+margin-left:0px;
+width:90%;
+}
+
+
 #ayuda {
 background: #efe;
 width:90%;
@@ -497,6 +520,25 @@ background: #141 ;
 #ayuda label {
 color: #141;
 
+}
+
+.mainh1 {
+border-bottom:medium none #7777DD;
+color:#222266;
+font:180% sans-serif; 
+}
+
+.tablamain {
+font-size:1.4em;    
+height:25px;
+margin-left:0px;
+width:99%;
+}
+.tablastat {
+font-size:1.3em;    
+height:25px;
+margin-left:70px;
+width:90%;
 }
 
 #ayuda a:link,a:hover, a:visited {

@@ -10,8 +10,19 @@
   <META http-equiv="Content-Language" content="es-ar" /> 
   <META name="date" content="2010-08-01T08:49:37+00:00">
 
+
 <%= stylesheet_link_tag "ganancias" , :media => "all" %>
-<%= javascript_include_tag   'prototype.js', 'effects.js', 'dragdrop.js', 'controls.js', 'application.js', 'jquery-1.4.2.js', 'jquery.validate.js', 'additional-methods.js' %>
+
+<%= stylesheet_link_tag "visualize" , :media => "all" %>
+<%= stylesheet_link_tag "visualize-dark" , :media => "all" %>
+
+<%= javascript_include_tag  'jquery-1.4.2.js' %>
+<script type="text/javascript" src="/javascripts/visualize/enhance.js"></script>
+<!--[if IE]>
+     <script type="text/javascript" src="/javascripts/visualize/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/javascripts/visualize/visualize.jQuery.js"></script>
+
 </head>
 
 <body id="ganancia" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
@@ -55,6 +66,9 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     <%#*<td width="100%" ><b><%=link_to "Nuevo Calculo", { :controller => "salary",:action => "index",:id => "" }, { :class => 'menulink'}</b></td>%>
     <td width="100%" ><b><%=link_to "Estadistica home", url_for(:controller => "estadistica"), { :class => 'menulink'}%></b></td>
  </tr>
+<tr>
+ <td width="100%" ><b> <%=link_to "Estadistica anual", { :controller => "estadistica",:action => "estadistica_promedio_anual", :id => "" }, { :class => 'menulink'}%></b></td>    
+ </tr> 
  <tr>
  <td width="100%" ><b> <%=link_to "Estadistica por Rubro", { :controller => "estadistica",:action => "estadistica_por_rubro", :id => "" }, { :class => 'menulink'}%></b></td>    
  </tr>
@@ -70,7 +84,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 </table>
   </div>
-<div id="main" >
+<div id="mainstat" >
   <% if flash[:notice] -%>
     <div id="notice" ><%= flash[:notice] %></div>
   <% end -%>

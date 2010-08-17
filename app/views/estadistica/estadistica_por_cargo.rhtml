@@ -1,12 +1,12 @@
 <div id="estadistica"> 
   <p>
-    <h1>Estadística por Cargo </h1>
+    <div class="mainh1">Estadística por Cargo</div>  
   
   </p>
    <div class="entry">
         <%= render :partial => "tabla_estadistica_mes",
                 :locals => { :hash_datos_tabla => @estadisticas_cargo, 
-                :titulo_tabla=> "Estadística de salario promedio mensual bruto por Cargo (sin rubro)", :titulo_variable => "Cargo", :variable => :cargo}%>    
+                :titulo_tabla=> "Salario promedio mensual bruto por Cargo", :titulo_variable => "Cargo", :variable => :cargo}%>    
     </div>
    <Label class="text4">Se muestran los 20 primeros Cargos por cantidad de muestras  con minimo de 100 muestras por Cargo. </label> 
 </div>
