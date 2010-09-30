@@ -1,13 +1,47 @@
+<script type="text/javascript">  
+    
+     jQuery(document).ready(function(){
+            jQuery('#entry').tabs();		   
+      } 
+     ); 
+
+
+</script>
+  
+
+
 <div id="estadistica"> 
   <p>
     <div class="mainh1">Estadística por Cargo</div>  
   
   </p>
    <div class="entry">
-        <%= render :partial => "tabla_estadistica_mes",
-                :locals => { :hash_datos_tabla => @estadisticas_cargo, 
+        <ul>
+         <li><a href="#julio-tab"><span>Estadisticas Julio</span></a></li>
+         <li><a href="#agosto-tab"><span>Estadisticas Agosto</span></a></li>
+         <li><a href="#sept-tab"><span>Estadisticas Septiembre</span></a></li>
+        </ul>
+	 
+	 <div id="julio-tab">
+	  <%= render :partial => "tabla_estadistica_mes",
+                :locals => { :hash_datos_tabla => @estadisticas_cargo_julio, 
                 :titulo_tabla=> "Salario promedio mensual bruto por Cargo", :titulo_variable => "Cargo", :variable => :cargo}%>    
+	 </div>
+
+	 <div id="agosto-tab">
+	  <%= render :partial => "tabla_estadistica_mes",
+                :locals => { :hash_datos_tabla => @estadisticas_cargo_agosto, 
+                :titulo_tabla=> "Salario promedio mensual bruto por Cargo", :titulo_variable => "Cargo", :variable => :cargo}%>    
+	 </div>
+
+	 <div id="sept-tab">
+	 	  <%= render :partial => "tabla_estadistica_mes",
+                :locals => { :hash_datos_tabla => @estadisticas_cargo_septiembre, 
+                :titulo_tabla=> "Salario promedio mensual bruto por Cargo", :titulo_variable => "Cargo", :variable => :cargo}%>    
+
+	 </div>
+
     </div>
-   <Label class="text4">Se muestran los 20 primeros Cargos por cantidad de muestras  con minimo de 100 muestras por Cargo. </label> 
+   
 </div>
 

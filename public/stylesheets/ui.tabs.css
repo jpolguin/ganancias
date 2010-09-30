@@ -1,0 +1,108 @@
+/* Tabs
+-----------------------------------*/
+/*ESTE ARCHIVO CONTIENE LOS ESTILOS APLICADOS A UN TAB JQUERY SEGUN EL STANDARD DE OSDE
+-----------------------------------*/
+/*--MODIFICACION DE LOS ESTILOS STANDAR DE JQUERY PARA LOS TABS
+-----------------------------------*/
+#tabs {border:none; padding: 0%;font-family: Arial;
+						font-size: 9pt; background: #fbfbfb;}
+#subtabs {border:none; }
+.ui-tabs {border: none;font-family: Arial; font-size: 9pt;background: #fbfbfb;}
+/*.ui-tabs ul{top:1px; border: none; height: 30px}*/
+.ui-tabs .ui-tabs-nav { list-style: none; position: relative;
+                        padding: 0% 0% 0% 0%;
+                        background: url("../img/solapas/solapa_fondo.png") repeat-x; 
+                        border:none;
+                        height: 30px;
+                        text-align: center;
+						font-family: Arial;
+						font-size: 9pt;
+						white-space: nowrap;}
+                        
+ 
+/*SOLAPAS NO ACTIVAS*/                        
+.ui-tabs .ui-tabs-nav li { 	margin:0%;
+							padding:0% 0% 0% 0%;
+							position:relative;
+							height:20px;
+							width: 100px;
+	                        float:left;
+							list-style-type:none;
+							line-height:21px;
+							margin:0px;
+							background:none;
+							border:none;
+							text-align: center;
+							font-family: Arial;
+							font-size: 9pt;
+							
+							
+							}
+							
+							
+.ui-tabs .ui-tabs-nav li a {  padding: 0px;
+                              cursor: pointer;
+     						  background: url("../img/solapas/solapa.gif";
+     						  text-align: center;
+							  font-family: Arial;
+							  font-size: 9pt;}
+
+.ui-tabs .ui-tabs-nav li a hover{ color:#014783;}
+ 
+                             
+/*SOLAPAS ACTIVAS*/                                 
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { 
+	margin:0 0 0px 0;
+	padding:0% 0% 0% 0%;
+	position:relative;
+	height:20px;
+	width: 100px;
+	background:url("../img/solapas/solapa.gif") no-repeat right bottom;
+	color:white;
+	font-weight:bold;
+	text-align: center;
+	font-family: Arial;
+	font-size: 9pt;
+}
+
+ /*FIX para que IE muestre el border redondeado a la izq. */
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected .tab{ 
+	border:0px solid green;
+	width: 100%;
+	background: url("../img/solapas/left_solapa_activa.gif") no-repeat;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* FFX. anula fix ya que no lo necesita. IE ignorará este selector */ 
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected > .tab{
+	position:relative; 
+	width: 100%;
+	background: none;
+	padding:0;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected  a { 
+	color:white; cursor: text;
+}
+
+.ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { 
+	                                                              cursor: pointer;
+                                                                  background: url("../img/solapas/solapa.gif";} 
+
+/*GENERALES*/
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a, 
+.ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+
+
+
+.ui-tabs .ui-tabs-panel { padding: 0%;
+                          display: block; 
+                          border-width: 0; background: none; }
+                          
+.ui-tabs .ui-tabs-hide { display: none !important;
+                         text-align: center;
+						 font-family: Arial;
+						 font-size: 9pt;}
+
+
