@@ -1,40 +1,35 @@
 <script type="text/javascript">  
     
      jQuery(document).ready(function(){
-            jQuery('#entry').tabs();		   
+            jQuery('#tabs').tabs();		   
       } 
      ); 
 
 
 </script>
   
-
-
 <div id="estadistica"> 
-  <p>
     <div class="mainh1">Estadística por Cargo</div>  
-  
-  </p>
-   <div class="entry">
+  <div id="tabs" class="entry ui-tabs" >
         <ul>
-         <li><a href="#julio-tab"><span>Estadisticas Julio</span></a></li>
-         <li><a href="#agosto-tab"><span>Estadisticas Agosto</span></a></li>
-         <li><a href="#sept-tab"><span>Estadisticas Septiembre</span></a></li>
+         <li><a href="#julio-tab"><span>Julio</span></a></li>
+         <li><a href="#agosto-tab"><span>Agosto</span></a></li>
+         <li><a href="#sept-tab"><span>Septiembre</span></a></li>
         </ul>
 	 
-	 <div id="julio-tab">
+	 <div id="julio-tab" class="ui-tabs-hide">
 	  <%= render :partial => "tabla_estadistica_mes",
                 :locals => { :hash_datos_tabla => @estadisticas_cargo_julio, 
                 :titulo_tabla=> "Salario promedio mensual bruto por Cargo", :titulo_variable => "Cargo", :variable => :cargo}%>    
 	 </div>
 
-	 <div id="agosto-tab">
+	 <div id="agosto-tab" class="ui-tabs-hide">
 	  <%= render :partial => "tabla_estadistica_mes",
                 :locals => { :hash_datos_tabla => @estadisticas_cargo_agosto, 
                 :titulo_tabla=> "Salario promedio mensual bruto por Cargo", :titulo_variable => "Cargo", :variable => :cargo}%>    
 	 </div>
 
-	 <div id="sept-tab">
+	 <div id="sept-tab" class="ui-tabs-hide">
 	 	  <%= render :partial => "tabla_estadistica_mes",
                 :locals => { :hash_datos_tabla => @estadisticas_cargo_septiembre, 
                 :titulo_tabla=> "Salario promedio mensual bruto por Cargo", :titulo_variable => "Cargo", :variable => :cargo}%>    

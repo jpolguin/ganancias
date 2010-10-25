@@ -237,7 +237,7 @@ background-color: #bfb; color: black;
 }
 
 #estadistica .entry .fila_g {
-background-color: light gray ; color: black ;
+background-color: lightgray ; color: black ;
 }
 
 #estadistica .entry .fila_r {
@@ -552,3 +552,18 @@ font-weight: bold;
          letter-spacing: 0.15em; 
          word-spacing: 0.1em
  }  
+
+.ui-tabs .ui-tabs-hide {
+     display: none;
+}
+
+.ui-widget-header {
+background:url("images/ui-bg_gloss-wave_35_f6a828_500x100.png") repeat-x scroll 50% 50% #eee;
+border:1px solid #EEE;
+color:#FFFFFF;
+font-weight:bold;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+color:#222266;
+}
