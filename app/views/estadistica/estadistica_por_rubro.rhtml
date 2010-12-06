@@ -17,6 +17,8 @@
          <li><a href="#julio-tab"><span>Julio</span></a></li>
          <li><a href="#agosto-tab"><span>Agosto</span></a></li>
          <li><a href="#sept-tab"><span>Septiembre</span></a></li>
+         <li><a href="#octubre-tab"><span>Octubre</span></a></li>
+         <li><a href="#noviembre-tab"><span>Noviembre</span></a></li>
         </ul>
 	 
 	 <div id="julio-tab">
@@ -37,6 +39,21 @@
                 :titulo_tabla=> "Salario promedio mensual bruto por Rubro", :titulo_variable => "Rubro Empresa",:variable => :rubro_empresa}%>    
 
 	 </div>
+
+      	 <div id="octubre-tab">
+        <%= render :partial => "tabla_estadistica_mes",
+                :locals => { :hash_datos_tabla => @estadisticas_rubro_octubre, 
+                :titulo_tabla=> "Salario promedio mensual bruto por Rubro", :titulo_variable => "Rubro Empresa",:variable => :rubro_empresa}%>    
+
+	 </div>
+
+	 <div id="noviembre-tab">
+        <%= render :partial => "tabla_estadistica_mes",
+                :locals => { :hash_datos_tabla => @estadisticas_rubro_noviembre, 
+                :titulo_tabla=> "Salario promedio mensual bruto por Rubro", :titulo_variable => "Rubro Empresa",:variable => :rubro_empresa}%>    
+
+	 </div>
+
 
     </div>
 

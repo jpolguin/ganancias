@@ -15,6 +15,9 @@
          <li><a href="#julio-tab"><span>Julio</span></a></li>
          <li><a href="#agosto-tab"><span>Agosto</span></a></li>
          <li><a href="#sept-tab"><span>Septiembre</span></a></li>
+         <li><a href="#octubre-tab"><span>Agosto</span></a></li>
+         <li><a href="#noviembre-tab"><span>Septiembre</span></a></li>
+
         </ul>
 	 
 	 <div id="julio-tab" class="ui-tabs-hide">
@@ -36,6 +39,20 @@
 
 	 </div>
 
+      	 <div id="octubre-tab" class="ui-tabs-hide">
+	 	  <%= render :partial => "tabla_estadistica_mes",
+                :locals => { :hash_datos_tabla => @estadisticas_cargo_octubre, 
+                :titulo_tabla=> "Salario promedio mensual bruto por Cargo", :titulo_variable => "Cargo", :variable => :cargo}%>    
+
+	 </div>
+	 <div id="noviembre-tab" class="ui-tabs-hide">
+	 	  <%= render :partial => "tabla_estadistica_mes",
+                :locals => { :hash_datos_tabla => @estadisticas_cargo_noviembre, 
+                :titulo_tabla=> "Salario promedio mensual bruto por Cargo", :titulo_variable => "Cargo", :variable => :cargo}%>    
+
+	 </div>
+
+      
     </div>
    
 </div>
