@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 36) do
+ActiveRecord::Schema.define(:version => 38) do
 
   create_table "comparacion_sueldos", :force => true do |t|
     t.decimal "salario_bruto_actual", :precision => 10, :scale => 2, :default => 0.0

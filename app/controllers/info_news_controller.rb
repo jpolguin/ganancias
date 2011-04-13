@@ -5,13 +5,13 @@ class InfoNewsController < ApplicationController
     @deducc_directas =[]
     
     
-    @deducc_directas[0] = {:concepto => "Ganancia no imponible", :norma =>"ART 23, inc A", :valor=>10800,:aclaracion=>"Solo si es residente."}
-    @deducc_directas[1] = {:concepto => "Deduccion por conyuge", :norma =>"ART 23, inc B", :valor=>12000, :aclaracion=>"Residente en pais y no trabaje en rel.dependencia."}
-    @deducc_directas[2] = {:concepto => "Deduccion por Hijo", :norma =>"ART 23, inc B", :valor=>6000, :aclaracion=>"Hijo, hijastra/o, menor de 24 años o incapacitado para el trabajo"}
-    @deducc_directas[3] = {:concepto => "Otras cargas", :norma =>"ART 23, inc B", :valor=>4500, :aclaracion=>"Descendiente (Nieto/nieta, Bisnieto/a), ascendiente ( padre, madre, abuelo/a), Hermano/a, suegro/a con ingresos menores 7500 anual."}
-    @deducc_directas[4] = {:concepto => "Deduccion especial", :norma =>"ART 23, inc C, parrafo 3", :valor=>51840, :aclaracion=>"9000 para gan. empresas pero el importe sube 3.8 veces cuando se trate de ganancias a que se refieren incisos a,b y c del articulo 79 con limitaciones del ultimo parrafo art. 23. "}    
+    @deducc_directas[0] = {:concepto => "Ganancia no imponible", :norma =>"ART 23, inc A", :valor=>12960,:aclaracion=>"Solo si es residente."}
+    @deducc_directas[1] = {:concepto => "Deduccion por conyuge", :norma =>"ART 23, inc B", :valor=>14400, :aclaracion=>"Residente en pais y no trabaje en rel.dependencia."}
+    @deducc_directas[2] = {:concepto => "Deduccion por Hijo", :norma =>"ART 23, inc B", :valor=>7200, :aclaracion=>"Hijo, hijastra/o, menor de 24 años o incapacitado para el trabajo"}
+    @deducc_directas[3] = {:concepto => "Otras cargas", :norma =>"ART 23, inc B", :valor=>5400, :aclaracion=>"Descendiente (Nieto/nieta, Bisnieto/a), ascendiente ( padre, madre, abuelo/a), Hermano/a, suegro/a con ingresos menores 7500 anual."}
+    @deducc_directas[4] = {:concepto => "Deduccion especial", :norma =>"ART 23, inc C, parrafo 3", :valor=>62208, :aclaracion=>"12960 para gan. empresas pero el importe sube 3.8 veces cuando se trate de ganancias a que se refieren incisos a,b y c del articulo 79 con limitaciones del ultimo parrafo art. 23. "}    
     @deducc_directas[5] = {:concepto => "Gastos de Sepelio", :norma =>"ART 22.", :valor=>996.23, :aclaracion=>"N/A"}    
-    @deducc_directas[6] = {:concepto => "Empresas", :norma =>"ART. 23, INC. C), 1° PARRAFO", :valor=>10800, :aclaracion=>"Empresas, siempre que trabaje personalmente en las mismas (art. 49) o cuando se trate de ganancias netas incluidas en el artículo 79"}    
+    @deducc_directas[6] = {:concepto => "Empresas", :norma =>"ART. 23, INC. C), 1° PARRAFO", :valor=>12960, :aclaracion=>"Empresas, siempre que trabaje personalmente en las mismas (art. 49) o cuando se trate de ganancias netas incluidas en el artículo 79"}    
 
     @deducc_generales =[]    
     
