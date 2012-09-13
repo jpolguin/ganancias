@@ -1,3 +1,10 @@
+$ git remote -v
+heroku  git@heroku.com:ganancias.git (fetch)
+heroku  git@heroku.com:ganancias.git (push)
+olguin  git@github.com:jpolguin/ganancias.git (fetch)
+olguin  git@github.com:jpolguin/ganancias.git (push)
+origin  git@heroku.com:ganancias.git (fetch)
+origin  git@heroku.com:ganancias.git (push)
 == Welcome to Rails
 
 Rails is a web-application and persistence framework that includes everything
